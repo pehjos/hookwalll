@@ -38,7 +38,7 @@ time:"3:00",
 live:"LIVE",
 imagecd:"https://thumbs.gfycat.com/HelpfulDazzlingBluebottlejellyfish-max-1mb.gif",
 
-src:"http://peacefm.atunwadigital.streamguys1.com/peacefm?DIST=TuneIn&TGT=TuneIn&maxServers=2&partnertok=eyJhbGciOiJIUzI1NiIsImtpZCI6InR1bmVpbiIsInR5cCI6IkpXVCJ9.eyJ0cnVzdGVkX3BhcnRuZXIiOnRydWUsImlhdCI6MTY0MTg2NDM3MiwiaXNzIjoidGlzcnYifQ.68PvQcoQvWRfCv6MPKeOp1q1-4nf1Qfw5QMOGRD5QeE"
+src:"https://peacefm-atunwadigital.streamguys1.com/peacefm?listenerid=626a46b7cedd90051d3327d7df5ec209&awparams=playerid%3ASGplayer%3B&aw_0_1st.playerid=SGplayer&aw_0_1st.skey=1642367893338&aw_0_req.gdpr=true&us_privacy=1YNN&listenerid=626a46b7cedd90051d3327d7df5ec209&aw_0_req.gdpr=true&us_privacy=1YNN"
 },
 {
 id:"4",
