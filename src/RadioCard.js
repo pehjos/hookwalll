@@ -7,14 +7,14 @@ let fm = [
 {
 
 id:"1",
-srcimg:"https://cdn.onlineradiobox.com/img/l/2/6982.v5.png",
-name:"GBC Uniiq FM",
-country:"Accra",
+srcimg:"https://ichef.bbci.co.uk/images/ic/1920x1080/p029jc4l.jpg",
+name:"BBC FM",
+country:"London",
 time:"3:00",
 live:"LIVE",
 imagecd:"https://thumbs.gfycat.com/HelpfulDazzlingBluebottlejellyfish-max-1mb.gif",
 
-src:"http://173.249.50.205:8004/stream?type=http&nocache=1278"
+src:"https://stream.live.vc.bbcmedia.co.uk/bbc_world_service"
 },
 {
 
