@@ -7,14 +7,14 @@ let fm = [
 {
 
 id:"1",
-srcimg:"https://cdn-profiles.tunein.com/s1899/images/logog.jpg?t=157009",
-name:"OBONU 96.5FM",
+srcimg:"https://cdn.onlineradiobox.com/img/l/2/6982.v5.png",
+name:"GBC Uniiq FM",
 country:"Accra",
 time:"3:00",
 live:"LIVE",
 imagecd:"https://thumbs.gfycat.com/HelpfulDazzlingBluebottlejellyfish-max-1mb.gif",
 
-src:"http://173.249.50.205:8006/;?DIST=TuneIn&TGT=TuneIn&maxServers=2&partnertok=eyJhbGciOiJIUzI1NiIsImtpZCI6InR1bmVpbiIsInR5cCI6IkpXVCJ9.eyJ0cnVzdGVkX3BhcnRuZXIiOnRydWUsImlhdCI6MTY0MTg2NTk0NCwiaXNzIjoidGlzcnYifQ.spq2KB3jWOBe-tTAmsxrw1UDAypdewv2pU3R9YwCNGs"
+src:"http://173.249.50.205:8004/"
 },
 {
 
