@@ -14,7 +14,7 @@ time:"3:00",
 live:"LIVE",
 imagecd:"https://thumbs.gfycat.com/HelpfulDazzlingBluebottlejellyfish-max-1mb.gif",
 
-src:"http://173.249.50.205:8004/"
+src:"http://173.249.50.205:8004/stream?type=http&nocache=1278"
 },
 {
 
