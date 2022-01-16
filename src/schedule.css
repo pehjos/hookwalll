@@ -1,0 +1,36 @@
+.shedulecontent{
+    flex-direction: column;
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+    background-color: #171f24;
+    margin: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content:space-between;
+    flex: 1;
+    border-radius: 10px;
+
+}
+.shedulecontent>p{
+color: white;
+font-size: 19px;
+
+}
+
+.shedulehead{
+    color: thistle;
+    margin: 10px;
+    display: flex;
+    align-items: center; 
+    font-size: 17px;
+    flex: 1;  
+}
+.shedulebody{
+    color:gray;
+    margin: 10px;
+    display: flex;
+    align-items: center; 
+    font-size: 15px;
+    flex: 1; 
+    justify-content: center;
+
+}

@@ -1,0 +1,50 @@
+.navmenucontent{
+    display: flex;
+    
+    margin-left: 10px;
+    
+    
+    
+    }
+    .navmenuicons{
+    
+        display: flex;
+    margin-left: 20px;
+     flex-direction: column;
+    
+    
+    }
+    .navmenuicons>.MuiSvgIcon-root{
+    color:lightgrey;
+    font-size: 30px;
+    margin-top: 30px;
+    
+    }
+    .navmenuicons>img{
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    }
+    .navmenutext>p{
+        margin: 10px;
+        display: flex;
+    margin-left: -90px;
+        margin-bottom: 40px;
+    color: whitesmoke;
+    flex-direction: column;
+    font-family: 'Commissioner', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+    
+    }
+    .navmenutext{
+    margin-top: 20px;
+    
+    }
+    .togle{
+    
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    }
+    

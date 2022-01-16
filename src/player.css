@@ -1,0 +1,46 @@
+.playerfamecont{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    margin: 10px;
+    }
+    .playerfamecont>p{
+        font-size: 12px;
+        color: thistle;
+        }
+    .playerborncont{
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        align-items: center;
+        margin: 10px;
+    }
+    .playerborncont>p{
+        font-size: 12px;
+        color: thistle;
+    }
+    .player{
+    flex-direction: row;
+        box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+        background-color: #171f24;
+        margin: 10px;
+        display: flex;
+        align-items: center; 
+        justify-content:space-between;
+        flex: 1;
+    border-radius: 10px;
+    }
+    .playerfame>p{
+        font-size: 16px;
+        color: tomato;
+        font-weight: 700;
+        margin: 10px;
+       
+    }
+    .playerborn>p{
+        font-size: 16px;
+        color: tomato;
+        font-weight: 700;
+        margin: 10px;
+    }

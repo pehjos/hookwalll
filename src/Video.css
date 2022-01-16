@@ -1,0 +1,14 @@
+.video{
+    margin-top: 0px;
+    
+    
+    }
+    @media(min-width:700px){
+    
+        .video{
+            margin-top: 0;
+            
+            
+            }
+    
+    }

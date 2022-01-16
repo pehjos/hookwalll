@@ -1,0 +1,163 @@
+/* 
+  
+ .radio{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #0b62b3;
+    background: -moz-linear-gradient(-45deg, #0b62b3 0%, #7dff5f 100%);
+    background: -webkit-linear-gradient(-45deg, #0b62b3 0%, #7dff5f 100%);
+    background: linear-gradient(135deg, #0b62b3 0%, #7dff5f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b62b3', endColorstr='#7dff5f', GradientType=1);
+    font-family: "Helvetica Neue", "Futura", "Trebuchet MS", Arial;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  } */
+
+.radio_top{
+height:300px;
+background-size: cover;
+background-image:linear-gradient(rgba(0, 0, 0, 0.438),rgba(0,0,0,0.8)),url("https://media.istockphoto.com/photos/professional-microphone-picture-id1071759456?b=1&k=20&m=1071759456&s=170667a&w=0&h=2qwPc1pL3eAdGiXtxfUA8Dev0uVJF-f9m7HgXGkyAH0=");
+color:white;
+object-fit: fill;
+
+}
+.powerbtn>.MuiSvgIcon-root{
+color:red;
+border-radius:50%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding:10px;
+}
+.radio_top>h3{
+  font-size :19px;
+  text-shadow: 0 0 3px #fdf7f7, 0 0 5px #8c84a0;
+text-align: center;
+
+letter-spacing:0.3em;
+line-height:1.3em;
+margin-left:10%;
+margin-right:10%;
+}
+.radio_top>a{
+ text-decoration: none;
+ color:white;
+}
+.radio_card{
+align-items: center;
+display:flex ;
+justify-content:space-between;
+margin:10px;
+background-color: white;
+}
+.radio_card_1>img{
+height:80px;
+width:80px;
+border-radius: 50%;
+}
+.btnSearc{
+  
+  display: flex;
+  align-items: center;
+ justify-content: center;
+margin-right: 10%;
+margin-left: 10%;
+  margin-top: 100px;
+  border-radius: 30px;
+  background-color: whitesmoke;
+  padding: 5px;
+      }
+      /* .btnSearch>.MuiSvgIcon-root{
+      
+            } */
+      .btnSearc>input{
+        border-radius: 30px;
+        display: flex;
+        outline-width: 0;
+        background-color: whitesmoke;
+        border: none;
+        align-items: center;
+      height:30px;
+      width:100%;
+            }
+            .btnSearc>.MuiSvgIcon-root{
+            color: black
+                  }
+.radio_card_2{
+  align-items: center;
+  display:flex ;
+  justify-content:space-between;
+  margin:10px;
+  flex-direction: column;
+width:100px;
+}
+.radio_card_3{
+
+  align-items: center;
+  display:flex ;
+  justify-content:space-between;
+  margin:10px;
+  flex-direction: column;
+
+}
+.radio_card_3>div>p{
+font-size :19px;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+
+}
+.radio_card_2>h6{
+
+  font-size :14px;
+  text-shadow: 0 0 3px #0c0b0b, 0 0 5px #ffffff;
+
+
+}
+.radio_card_2>p{
+
+  font-size :14px;
+
+
+
+}
+.radio_card_4{
+  align-items: center;
+  display:flex ;
+  justify-content:space-between;
+  margin:10px;
+  flex-direction: column;
+
+
+}
+.radio_card_4>select{
+outline-width: 0;
+border:1px solid lightgray;
+
+}
+.radio_card_4>p{
+width:50px;
+text-align:center;
+color:white;
+
+padding:1px;
+background: #0b62b3;
+background: -moz-linear-gradient(-45deg, #b30b8f 0%, #d82020 100%);
+background: -webkit-linear-gradient(-45deg, #b30b0b 0%, #ff925f 100%);
+background: linear-gradient(135deg, #da697b 0%, #910510 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b62b3', endColorstr='#7dff5f', GradientType=1);
+font-family: "Helvetica Neue", "Futura", "Trebuchet MS", Arial;
+}
+.radio_card_4>img{
+width:80px;
+height:80px;
+
+
+}
+
+.playing>img{
+object-fit:cover;
+  width:90px;
+  height:60px
+
+}

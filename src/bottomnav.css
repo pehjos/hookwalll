@@ -1,0 +1,33 @@
+.bottom__nav{
+    display: flex;
+    z-index: 100;
+    overflow: hidden;
+   
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+   margin-top:10px;
+   height:30px;
+
+    }
+    .page{
+display: none;
+
+    }
+    
+   .star__pages1{
+
+
+
+    z-index: 100;
+    overflow: scroll;
+  
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+   margin-top:0px;
+   height:40px;
+
+   }

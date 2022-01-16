@@ -1,0 +1,74 @@
+@media(min-width:600px){
+
+
+    .desktop__navcontent{
+    display: flex;
+    
+    flex: 1;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .desktop__navcontenticon{
+    
+        display: flex;
+        align-items: center;
+        flex: 1;
+        margin: 10px;
+        justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px;
+    
+    }
+    .desktop__nav{
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 13px;
+    background-color: white;
+    border: 1px solid lightgray;
+    overflow: hidden;
+    position: sticky;
+    z-index: 100;
+    }
+    
+    .desktop__navheader{
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 10px;
+    
+    }
+    .desktop__navcontenttext{
+    margin: 30px;
+    padding: 10px;
+    line-height: 3em;
+    color: gray;
+    }
+    .desktop__navcontenticon>.MuiSvgIcon-root{
+    color: rgb(233, 174, 65);
+    margin: 11px;
+    }
+    .desktop__navheader>p{
+    
+    color: teal;
+    
+    
+    }
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    

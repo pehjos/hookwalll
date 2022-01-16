@@ -1,0 +1,172 @@
+
+
+/* CSS */
+
+
+
+
+
+.music{
+    margin: 10px;
+    
+    }
+    .imagesearchs{
+    display: flex;
+    flex: 1;
+    
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    width: 100%;
+    }
+    .imagesearchs>input{
+    margin: 10px;
+    height: 30px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline-width: 0;
+    background-color:white ;
+    }
+    .imagesearchs>.MuiSvgIcon-root{
+    
+    color: orange;
+    }
+    .content{
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 6px 18px -9px rgba(0,0,0,0.75);
+    }
+    .cover>img{
+    width: 100px;
+    height: 110px;
+    margin-bottom: -4px;
+    }
+    .flip-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    margin-bottom: -10px;
+    
+    }
+    .song_items{
+    width: 100%;
+    
+    }
+    .song_itemstitle{
+     margin-left: 20px;
+    
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    
+    }
+    .song_itemsplayers{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        
+       
+    
+    
+    }
+    .play1>.MuiSvgIcon-root{
+       color:  #2196f3;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+       font-size: 30px;
+    margin-left: 20px;
+    background-color: whitesmoke;
+    border-radius: 100%;
+    box-shadow: 0px 6px 18px -9px rgba(0,0,0,0.75);
+    }
+    .play2>.MuiSvgIcon-root{
+    
+         display: flex;
+         align-items: center;
+         margin: 6px;
+        color: rgb(233, 174, 65);
+     font-size: 15px;
+     }
+     .play2{
+         font-size: 14px;
+     }
+    .play1{
+        flex: 1;
+        display: flex;
+        align-items: center;
+     
+      
+    
+    }
+    .play2{
+        flex: 1;
+        display: flex;
+        align-items: center;
+     
+        font-family: 'Commissioner', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+    
+    }
+    .song_itemsfooter{
+        flex: 1;
+        display: flex;
+        align-items: center;
+      width: 100%;
+        justify-content: space-between;
+    
+    }
+    .song_itemsfooterrank>p{
+    margin-left: 4px;
+    color:  #2196f3;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 5px;
+      font-family: 'Commissioner', sans-serif;
+      font-family: 'Quicksand', sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+    }
+    .song_itemsfooterrank>h5{
+        margin-left: 20px;
+        color: rgb(233, 174, 65); 
+        font-family: 'Commissioner', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+            font-weight: 600; 
+          
+        }
+    .song_itemsfooterrank{
+    margin-right: 5px;
+       
+        display: flex;
+        align-items: center;
+        font-family: 'Commissioner', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+      
+    }
+    .song_itemsfooteradd{
+        font-family: 'Commissioner', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+        flex: 1;
+        display: flex;
+        align-items: center;
+      margin-left: 10px;
+        
+    }
+    .song_itemsfooteradd>.MuiSvgIcon-root{
+    
+        color: rgb(233, 174, 65);
+      font-size: 15px;
+        
+    }
+    .song_itemsfooteradd{
+        font-size: 14px;
+    }
+    

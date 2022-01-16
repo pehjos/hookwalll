@@ -1,0 +1,47 @@
+.tvcontents{
+
+    flex-direction: column;
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+    background-color: #171f24;
+    margin: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content:space-between;
+    flex: 1;
+    border-radius: 10px;
+    
+    }
+    .tvcontenttext>img{
+    width: 50%;
+    
+    
+    
+    }
+    .tvcontents>p{
+     font-size: 19px; 
+     color: white;  
+    }
+    .tvcontenttext{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    }
+    .tvcontenttext>p{
+    color: gray;
+    font-size: 16px;
+    margin: 10px;
+    }
+    
+    .tvcontenttext>h6{
+    color:yellow;
+    font-size: 16px;
+    margin: 10px;
+    }
+    .sponser>img{
+    margin: 2px;
+    width: 90px;
+    
+    
+    }

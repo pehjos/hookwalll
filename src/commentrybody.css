@@ -1,0 +1,74 @@
+.commentbar{
+    display: flex;
+    align-items: center;
+    background-color: #2196f3;
+    position: fixed;
+    width: 100%;
+    z-index:100;
+    top: 0;
+    
+    }
+    .commentiico{
+    
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    
+    
+    }
+    .commenttext{
+    
+        font-weight: 900;
+        font-family: 'Commissioner', sans-serif;
+        font-family: 'Indie Flower', cursive;
+        font-family: 'Quicksand', sans-serif;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        
+    
+    }
+    
+    @media(max-width:600px){
+    
+    .commentbar{
+    color: white;
+        background-color: #2196f3;
+    width: 100%;
+    
+    }
+      
+            .commentiico{
+            
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            
+            
+            }
+            .commenttext{
+            
+            
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                
+            
+            }
+            
+    
+    
+    }
+    .comentcontent{
+    
+    display: contents;
+    align-items: center;
+    
+    }
+    
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,115 @@
+.mainsection{
+    background-color: white;
+    
+    height:150vh;
+    margin-top: 570px;
+    margin-left: 26px;
+    z-index: 10;
+    
+    }
+    .contentComs{
+    overflow: scroll;
+    height: 370px;
+    
+    
+    }
+    
+    .mainsection>.MuiSvgIcon-root{
+    
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 10px;
+    }
+    .submainheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    
+    }
+    
+    .input__Text{
+    background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50px;
+        margin: 10px;
+       border: 1px solid lightgray;
+    }
+    .input__Text>.MuiSvgIcon-root{
+       color: teal;
+           
+        }
+        .submainheader>.MuiSvgIcon-root{
+            color: #2196f3;
+                
+             }  
+    .input__Text>input{
+    outline-width: 0;
+    border: none;
+    height: 30px;
+    width: 280px;
+    background-color: transparent; 
+    border-radius: 5;
+    font-size: 17px;
+    margin-left: 11px;
+    }
+    .contentComenttext{
+    text-align: left;
+    margin: 10px;
+    
+    
+    }
+    .contentComentname{
+    font-weight: 800;
+        text-align: left;
+        margin: 10px;  
+    }
+    .contentComent{
+    background-color: whitesmoke;
+    border-radius: 9px;
+    margin: 10px;
+    }
+    .contentComentreply1{
+    display: flex;
+    color: grey;
+    align-items:center ;
+    justify-content: left;
+    margin: 10px;
+    }
+    .contentComentreply{
+    border-bottom:1px solid lightgrey;
+        display: flex;
+    
+        align-items:center ;
+        justify-content: space-between;
+    margin: 10px;
+    }
+    
+    #btnfile{
+    width: 0px;
+    height: 50px;
+    }
+    .picker{
+    position: fixed;
+    background-color: aqua;
+    width: 50px;
+    float: left;
+    height: 60px;
+    }
+    #preview{
+    border-radius: 10px;
+    border: 0px solid gray;
+    outline-width: 0;
+    position: absolute;
+    background-color: transparent;
+    margin-top: -130px;
+    margin-left: 40px;
+    object-fit: cover;
+    height: 140px;
+    width: 80px;
+    z-index: 70;
+    }

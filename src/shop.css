@@ -1,0 +1,134 @@
+.shop{
+    width: 100%;
+    margin-top: 50px;
+    }
+    
+    @media(max-width:600px){
+     
+    
+    
+    }
+    .shopcontent{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    }
+    .shopcontentheader{
+    
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      
+    
+    }
+    .shopcontentheader>p{
+    font-size: 18px;
+    margin-top: 25px;
+    color: teal;
+    border-left: 1px solid gray;
+    }
+    .shopcontentheader>img{
+        border-radius: 50%;
+        width: 60px;
+    object-position: center;
+    height: 60px;
+    
+    
+    }
+    .shopcontentheader>.MuiAvatar-root{
+        border-radius: 50%;
+        width: 60px;
+    border: 2px solid gray;
+    height: 60px;
+    margin: 4px;
+    object-fit: fill;
+    }
+    .shopcontentmiddle>a>img{
+        width: 100%;
+       
+    height: 230px;
+    position: relative;
+    
+    }
+    .shopcontentmiddle>h6{
+    margin-top: -80px;
+    margin-left: 190px;
+    font-size: 20px;
+    transform: rotate(-50deg);
+    border: 1px solid lightgreen;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background-image: radial-gradient(orange ,lightblue,gray,tan,rgba(255, 72, 0, 0.363),tan,teal,gold);
+    color: rgb(255, 240, 27);
+    }
+    .shopcontentmiddle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    }
+    .shopcontentfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    }
+    .itemdescription{
+        margin: 10px;
+        font-family: 'Commissioner', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .shopcontentfooter>p{
+       margin-right: 80px;
+       border: 1px solid rgba(255, 166, 0, 0.76);
+       width: 190px;
+       height: 40px;
+       align-items: center;
+       text-align: center;
+       line-height: 2.5rem;
+       letter-spacing: 0.3rem;
+      font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Commissioner', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+        }
+        
+       .shopcontentfooter>.MuiSvgIcon-root{
+       color: orange;
+        }
+        .shop>h6{
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    transform: rotate(-10deg);
+        }
+    .shop>.MuiSvgIcon-root{
+    color: orange;
+    margin-left: 200px;
+    font-size: 40px;
+    transform: rotate(-10deg);
+        }
+        
+         .shopcontentfooterlocation{
+    position: relative;
+    margin-top: 40px;
+    font-size: 16px;
+    color: chocolate;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    font-family: 'Commissioner', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+         }
+    
+    
+    
+    
+    

@@ -1,0 +1,143 @@
+.livescorecontent{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    margin-top: auto;
+    background-color: wheat;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid lightgray;
+    width: 90%;
+    
+    }
+    
+    .livescoreleft>img{
+    width: 30px;
+    height: 30px;
+    }
+    
+    .livescoreleft{
+    align-items: center;
+    margin: 10px;
+    font-size: 18px;
+    word-wrap: break-word;
+    flex-direction: column;
+    width: 30%;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+    .livescoreleft>p{
+    text-align: left;
+    font-size: 18px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    }
+    .livescoremidle{
+    align-items: center;
+    margin: 10px;
+    font-size: 18px; 
+    width: 20%;
+    }
+    .livescoremidle>img{
+    
+    width: 30px;
+    height: 30px;
+    }
+    .livescoreright{
+        align-items: center;
+        margin: 10px;
+        font-size: 18px;
+        word-wrap: break-word;
+        flex-direction: column;
+        width: 30%;
+        height: 140px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .livescoreright>img{
+    
+    background-color: transparent;
+    width: 20px;
+    height: 20px;  
+    
+    }
+    .livescoreright>p{
+    font-size: 12px;
+    overflow: hidden; 
+    }
+    
+    
+    .livescorecontents{
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+    background-color: #171f24;
+    margin: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content:space-between;
+    flex-direction: column;
+    overflow: hidden;
+    
+    }
+    .livescorecontents>p{
+    margin: 10px;
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 2px;
+    color: white;
+    }
+    .livescoreright>h6{
+    
+    height: 20px;
+    width: 20px; 
+    background-color:green;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px;
+    }
+    
+    .livescoreleft>h6{
+    
+    height: 20px;
+    width: 20px; 
+    background-color:green;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px;
+    
+    }
+    .livescoremidle>h6{
+    color: green;
+    font-size: 16px;
+    line-height: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px;
+    color:green;
+    text-transform: lowercase;
+    
+    }
+    .livescoremidle>p{
+       color: tomato;
+        
+        }
+    
+    
+        .livescoreright>p{
+      text-align: left;
+     word-wrap: break-word; 
+            }
+       
