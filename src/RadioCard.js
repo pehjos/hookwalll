@@ -10,7 +10,7 @@ let fm = [
     id:"1",
     srcimg:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Shure_mikrofon_55S.jpg/1200px-Shure_mikrofon_55S.jpg",
     name:"HOOKSTUDIO FM",
-    country:"BRODI-SAHKUM",
+    country:"Brodi",
     time:"3:00",
     live:"LIVE",
    
