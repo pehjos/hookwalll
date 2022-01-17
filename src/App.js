@@ -106,7 +106,7 @@ return (
 <Search/>
 </Route>
 <Route path="/football">
-<SoccerLive/>
+{/* <SoccerLive/> */}
 </Route>
 <Route path="/volleyball">
 <VolleyLive/>
@@ -172,7 +172,7 @@ return (
 
 
 <Route path="/video">
-<Appbar/>
+{/* <Appbar/> */}
 
 
 <div className="app__body">
@@ -206,7 +206,7 @@ return (
   trtial
   */}
 <Route path="/image">
-<Appbar/>
+{/* <Appbar/> */}
 
 
 <div className="app__body">

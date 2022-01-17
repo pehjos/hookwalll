@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import './image.css'
 import numeral from 'numeral'
+import {Link} from 'react-router-dom'
 import Axios from 'axios'
 import {
     Card,
@@ -8,7 +9,7 @@ import {
 } from '@material-ui/core'
 import {
 FavoriteBorder,
-CloudDownload,
+CloudDownload,ArrowBackOutlined,
 Search,
 RemoveRedEyeOutlined
 }from '@material-ui/icons'
@@ -32,10 +33,16 @@ setimage(res.data.hits)
 
     return (
         <div className="image">
-              <div className="imagesearch">
-            <input type="text" placeholder="search images"/>
-            <Search/>
-            </div>
+           <div className="radio_to">
+<Link to ="/">
+  < ArrowBackOutlined/>
+  </Link>
+<h3>ENJOY FREE IMAGES</h3> 
+<div className="btnSearc">
+<input type="text" placeholder="Search images"/>
+<Search/>
+</div>
+</div> 
         <div className="imagecontent">
 
          {image.map((image)=>(

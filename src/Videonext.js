@@ -77,7 +77,7 @@ const [isVideoplaying, setisVideoplaying]=useState(false)
     
 
     return (
-        <div className="image">
+        <div className="imagen">
              
         <div className="videocontent">
         {isLoading ? (<div className="loader10">
