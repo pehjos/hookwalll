@@ -4,6 +4,19 @@ import {Link} from 'react-router-dom'
 import {Search,ArrowBackOutlined} from '@material-ui/icons'
 function RadioCard() {
 let fm = [
+
+  {
+
+    id:"1",
+    srcimg:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Shure_mikrofon_55S.jpg/1200px-Shure_mikrofon_55S.jpg",
+    name:"HOOKSTUDIO FM",
+    country:"BRODI-SAHKUM",
+    time:"3:00",
+    live:"LIVE",
+   
+    
+    src:"http://stream.zeno.fm/vktuhxdmmchvv"
+    },  
 {
 
 id:"1",
