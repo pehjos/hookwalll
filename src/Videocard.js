@@ -137,11 +137,11 @@ onClose={toglesliders("right",false)}>
 <div className="header">
 <Avatar size='small' src={newsrc} />
 
-<marquee>{title}</marquee>
+{isPlaying?(<marquee>{title}</marquee>):""}
 {/* <p onClick={toglesliders("right",true)}>{newtype}</p> */}
 
 
-<p>{cur}</p>
+{isPlaying?(<p>{cur}</p>):""}
 </div>
 <video  src={videosrc}
  ref={videoRef}
@@ -153,6 +153,7 @@ onTimeUpdate={handleTimeUpdate}
 
 <div className="tileright1">
 <div className="tile_controllers">
+{isPlaying?(
 <div className="controllers__top">
 <div className="controllers__top_icon" onClick={toggleMute}>
 {isMuted?
@@ -178,7 +179,7 @@ value={speed}
 <option value={2}>2x</option>
 </select>               
 </div>
-
+):""}
 </div>
 
 </div>

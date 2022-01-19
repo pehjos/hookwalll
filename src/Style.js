@@ -35,6 +35,18 @@ import {ThemeConsumer} from 'styled-components'
       background-color:${props=>props.theme.mode==='dark'?'#171f24':''};
     border-bottom:${props=>props.theme.mode==='dark'?'':'1px solid  #e1e9ee'};
     }
+    .shopCard_card{
+      background-color:${props=>props.theme.mode==='dark'?'rgb(0, 30, 60)':''};
+      color:${props=>props.theme.mode==='dark'?'white':'#111'};
+    }
+    .shopCard_card>p{
+      background-color:${props=>props.theme.mode==='dark'?'rgb(0, 30, 60)':''};
+      color:${props=>props.theme.mode==='dark'?'white':'#111'};
+    }
+    .shopCard_card>h6{
+      background-color:${props=>props.theme.mode==='dark'?'rgb(0, 30, 60)':''};
+      color:${props=>props.theme.mode==='dark'?'green':''};
+    }
     .search{
       color:${props=>props.theme.mode==='dark'?'lightgrey':'black'};
 

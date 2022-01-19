@@ -1,5 +1,9 @@
 import React from 'react'
 import './shop.css'
+import './shopcard.css'
+import {Link} from 'react-router-dom'
+import {  useQuery } from 'react-query'
+import ShopCard from './ShopCard'
 import {
 Card,
 Avatar,
@@ -7,94 +11,53 @@ Avatar,
 import {
     Star,
 ShoppingBasket,
-Room,
-
+Room,Search,
+ArrowBackOutlined
 } from '@material-ui/icons'
 function Shop() {
+
+ // FETCH POST
+ const { DtaLoading, error, data } = useQuery('shop', () =>
+ fetch('https://forecastmal.herokuapp.com/posts?page=1').then(res =>
+   res.json()
+ 
+ )
+ )
+console.log(data,"hello")
+
+
 return (
 <div className="shop">
-<img src="https://img.icons8.com/bubbles/50/000000/shopping-cart.png"/>
-    <h6>Sponsors</h6>
-    <ShoppingBasket/>
-<Card className="shopcontent">
-<div className="shopcontentheader">
-<Avatar  src="https://media-exp1.licdn.com/dms/image/C5603AQEEvxXppI3NcQ/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=s9QOUyciyM0DvLagKsT0MHIDngGmJDPa49jj3mE8Kd0"/>
-<p>@pehjos.products</p>
+<div className="radio_shop">
+<Link to ="/">
+  < ArrowBackOutlined/>
+  </Link>
+<h3>LEARN MORE ABOUT HOW YOU CAN SELL ON HOOKWALL</h3> 
+<div className="btnSearc">
+<input type="text" placeholder="Search Products..."/>
+<Search/>
+</div>
+</div> 
 
+<div className="shop_card">
+{ data && data.data.map((post1,index) => (
+       index<80&&(
+<ShopCard
+post={post1} 
+id={post1?._id}
+key={post1?._id}
+image={post1?.image}
+price={post1?.product_price}
+title={post1?.product_title}
+/>
+)))} 
 </div>
-<div className="shopcontentmiddle">
-<a href="https://pehjoss.netlify.app/">
-<img src="https://www.reosolarpower.com/uploads/030e74f6.jpg"/>
-</a>
-<h6>¢789</h6>
-</div>
-<div className="shopcontentfooterlocation">
-    <Room/>
-<p>Sunyani-Abesim</p>
-
-</div>
-<div className="itemdescription">
-    <p>Solar grnerators for powering a whole house#5600W.#200AC output .3Very Affordable</p>
-</div>
-<div className="shopcontentfooter">
-  
-<p>+233506136624</p>
-<Star/>
-<h5>4.0</h5>
-</div>
-</Card>
-<Card className="shopcontent">
-<div className="shopcontentheader">
-<Avatar  src="https://media-exp1.licdn.com/dms/image/C5603AQEEvxXppI3NcQ/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=s9QOUyciyM0DvLagKsT0MHIDngGmJDPa49jj3mE8Kd0"/>
-<p>@Atis.products</p>
-
-</div>
-<div className="shopcontentmiddle">
-<a href="https://pehjoss.netlify.app/">
-<img src="https://www.extremetech.com/wp-content/uploads/2019/12/SONATA-hero-option1-764A5360-edit.jpg"/>
-</a>
-<h6>¢50,000</h6>
-</div>
-<div className="shopcontentfooterlocation">
-<Room/>
-<p>Accra-Dansoman</p>
-</div>
-<div className="itemdescription">
-    <p>Solar grnerators for powering a whole house#5600W.#200AC output .3Very Affordable</p>
-</div>
-<div className="shopcontentfooter">
-<p>+233506136624</p>
-<Star/>
-<h5>4.0</h5>
-</div>
-</Card>
-<Card className="shopcontent">
-<div className="shopcontentheader">
-<Avatar  src="https://media-exp1.licdn.com/dms/image/C5603AQEEvxXppI3NcQ/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=s9QOUyciyM0DvLagKsT0MHIDngGmJDPa49jj3mE8Kd0"/>
-<p>@pehjos.products</p>
-
-</div>
-<div className="shopcontentmiddle">
-<a href="https://pehjoss.netlify.app/">
-<img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6415/6415816_sd.jpg"/>
-</a>
-<h6>¢5000</h6>
-</div>
-<div className="shopcontentfooterlocation">
-<Room/>
-<p>Sunyani-Abesim</p>
-</div>
-<div className="itemdescription">
-    <p>Solar grnerators for powering a whole house#5600W.#200AC output .3Very Affordable</p>
-</div>
-<div className="shopcontentfooter">
-<p>+233506136624</p>
-<Star/>
-<h5>4.0</h5>
-</div>
-</Card>
 </div>
 )
 }
 
 export default Shop
+
+
+
+// https://forecastmal.herokuapp.com/posts?page=1

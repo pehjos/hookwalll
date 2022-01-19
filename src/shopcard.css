@@ -1,0 +1,58 @@
+.shopCard_card{
+    flex-direction: column;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+    background-color:white;
+    height:250px;
+    width:100%;
+    
+    }
+    .shopCard_card>p{
+        font-family: 'Commissioner', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+        overflow:hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        text-overflow:ellipsis;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
+        justify-content: baseline;
+        color:#333;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
+        flex: 1;text-align: left;
+       
+    color:grey;
+    font-size:16px;
+    margin:10px;
+    }
+    .shopCard_card>a>img{
+    height:124px;
+    width:130px;
+    margin: 3px;
+    object-fit:contain;
+    background-color:white;
+    padding: 4px;
+        }
+    .shopCard_card>h6{
+    
+    color:red;
+    font-size:19px;
+    margin:10px;
+    }
+    .shop_card{
+    
+        display: grid;
+       width:100%;   
+        grid-gap:6px;
+      grid-template-columns: repeat(auto-fill,minmax(150px,2fr));
+     align-items:center;
+    
+    
+    }
