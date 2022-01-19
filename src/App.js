@@ -145,7 +145,7 @@ return (
 </Route>
 
 <Route path="/shop">
-<Appbar/>
+{/* <Appbar/> */}
 
 
 <div className="app__body">
