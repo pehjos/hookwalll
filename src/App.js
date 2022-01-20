@@ -251,7 +251,7 @@ return (
 
 <div className="app__bodyfeed">
 <World/>
-<Star/>
+{/* <Star/> */}
 <Quickac/>
 </div>
 
@@ -295,7 +295,7 @@ return (
 </div>
 
 <div className="app__bodyfeed">
-<Star/>
+{/* <Star/> */}
 <Quickac/>
 </div>
 
@@ -319,7 +319,7 @@ return (
 
 <div className="app__bodyfeed">
 <Science/>
-<Star/>
+{/* <Star/> */}
 <Quickac/>
 </div>
 
@@ -342,7 +342,7 @@ return (
 
 <div className="app__bodyfeed">
 <Technology/>
-<Star/>
+{/* <Star/> */}
 <Quickac/>
 </div>
 
