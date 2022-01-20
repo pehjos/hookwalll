@@ -1,6 +1,6 @@
 import React from 'react'
 import './topic.css'
-import Moment from 'react-moment'
+import Headlines from './Headlines'
 import {  useQuery } from 'react-query'
 import {
 AppsOutlined,
@@ -44,20 +44,16 @@ return (
 
 { data && data.articles.map((post1,index) => (
        index<5&&(
-<div className="topics_container__ch_content">
-<div className="topics_container__ch_text">
-<h4>{post1.title}</h4>
-<p>{post1.description}</p>
-<div className="topics_container__ch_footer">
-<p>{post1.author}</p>--
-<h6><Moment fromNow>{post1.publishedAt}</Moment></h6>
-</div>
-</div>
-<div className="topics_container__ch_img">
-<img src={post1.urlToImage}/>
-</div>
-
-</div>
+<Headlines
+urlToImage={post1.urlToImage}
+title={post1.title}
+description={post1.description}
+author={post1.author}
+id={post1._id}
+publishedAt={post1.publishedAt}
+url={post1.url}
+src={post1.source.name}
+/>
 )))} 
 
 

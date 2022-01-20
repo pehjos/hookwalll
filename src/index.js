@@ -5,6 +5,8 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import reportWebVitals from './reportWebVitals';
 import { reducers } from './reducer';
+import reducer, { initialState } from "./reduce";
+import { StateProvider } from "./StateProvider";
 import App from './App';
 import './index.css';
 import { QueryClient, QueryClientProvider } from "react-query";
@@ -14,10 +16,12 @@ const queryClient = new QueryClient();
 ReactDOM.render(
   <React.StrictMode>
   <Provider store={store}>
+  <StateProvider initialState={initialState} reducer={reducer}>
   <QueryClientProvider client={queryClient}>
     <App />
    
   </QueryClientProvider>
+ </StateProvider>
   </Provider>
   </React.StrictMode>,
   document.getElementById('root'),

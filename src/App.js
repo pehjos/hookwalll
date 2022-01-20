@@ -35,7 +35,7 @@ import {Link,NavLink} from 'react-router-dom'
 import News from './News'
 import World from './World'
 import Sports from './Sports'
-import Live from './Live'
+import Postdetail from './Postdetail'
 
 import Science from './Science'
 import Technology from './Technology'
@@ -136,6 +136,11 @@ return (
 </Route>
 <Route path="/post/:id">
 <PostDeatils/>
+<BottomNav/>
+</Route>
+<Route path="/read">
+<Postdetail/>
+
 </Route>
 {/*videostream */}
 <Route path="/videostream">

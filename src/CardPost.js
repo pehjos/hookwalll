@@ -176,6 +176,7 @@ const Likes = () => {
 
   
   // open post
+  const scrolltop= () => window.scrollTo({top:"0",behavior:"smooth"})
 const history=useHistory()
 const openPost=()=>
 {
@@ -413,7 +414,7 @@ return (
 <NewReleasesRounded/>
 
 
-  <h3  onClick={openPost} >{newsrc}</h3>
+  <h3   >{newsrc}</h3>
 </div>
 <Rightmobileslider className="drawer" open={states.right} anchor="bottom"
 onClose={toglesliders("right",false)}>
@@ -428,12 +429,13 @@ onClose={toglesliders("right",false)}>
 
 
 
-<div className="card__image">
+<div onClick={scrolltop} className="card__image">
   {!post.image==""?(<ReactImageFallback
 src={newimage}
 fallbackImage={optionalimage}
 initialImage="{<ImageLoader/>}"
 alt="Loading... "
+onClick={openPost}
 />):(
   <video src={video} onClick={Playvideo} ref={Videoref}  />
 )

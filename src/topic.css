@@ -1,175 +1,172 @@
 .topics{
-color:rgb(15, 1, 1);
-margin:10px;
-}
-.topics_container__ch_head{
-justify-content: space-between;
-    display: flex;
-    align-items: center;
- margin:10px;
-}
-.topics_container__heda{
-    display: flex;
-    align-items: center
-
-}
-.topics_discovery{
-display: flex;
-align-items:center;
-font-size:16px;
-color:teal;
-}
-.topics_discovery>.MuiSvgIcon-root{
-    display: flex;
-    align-items:center;
-    color:orange;
-    font-size:16px;
+    color:rgb(15, 1, 1);
+    margin:10px;
     }
-.topics_discovery>p{
-    display: flex;
-    align-items:center;
+    .topics_container__ch_head{
+    justify-content: space-between;
+        display: flex;
+        align-items: center;
+     margin:10px;
+    }
+    .topics_container__heda{
+        display: flex;
+        align-items: center
     
     }
-.topics_container__ch{
-background-color:white;
-
-overflow-y: scroll;
-overflow-x:hidden;
-height:400px;
-border-radius: 6px;
-}
-#wg-api-football-fixture-modal{
-
-margin:10px;
-
-z-index: 100;
-
-
-
-}
-.api_football_modal_content{
-
-
-}
-.api_football_modal_close{
-    z-index: 100;
-  
-    margin-top:20px; 
-   
-}
-.sportsheader1{
-color:#fff;
-margin:10px;
-}
-.topics_container__c{
+    .topics_discovery{
+    display: flex;
+    align-items:center;
+    font-size:16px;
+    color:teal;
+    }
+    .topics_discovery>.MuiSvgIcon-root{
+        display: flex;
+        align-items:center;
+        color:orange;
+        font-size:16px;
+        }
+    .topics_discovery>p{
+        display: flex;
+        align-items:center;
+        
+        }
+    .topics_container__ch{
     background-color:white;
-    background-image:linear-gradient(rgba(80, 3, 3, 0.26),rgba(19, 16, 16, 0.466)),url("https://assets.manutd.com/AssetPicker/images/0/0/10/126/687707/Legends-Profile_Cristiano-Ronaldo1523460877263.jpg");
+    
     overflow-y: scroll;
     overflow-x:hidden;
     height:400px;
- background-size: cover;
     border-radius: 6px;
     }
-    .topics_container__{
+    #wg-api-football-fixture-modal{
+    
+    margin:10px;
+    
+    z-index: 100;
+    
+    
+    
+    }
+   
+    .api_football_modal_close{
+        z-index: 100;
+      
+        margin-top:20px; 
+       
+    }
+    .sportsheader1{
+    color:#fff;
+    margin:10px;
+    }
+    .topics_container__c{
         background-color:white;
         background-image:linear-gradient(rgba(80, 3, 3, 0.26),rgba(19, 16, 16, 0.466)),url("https://assets.manutd.com/AssetPicker/images/0/0/10/126/687707/Legends-Profile_Cristiano-Ronaldo1523460877263.jpg");
         overflow-y: scroll;
         overflow-x:hidden;
-        height:800px;
+        height:400px;
      background-size: cover;
         border-radius: 6px;
         }
-.topics_container__heda>.MuiSvgIcon-root{
-   font-size:16px;
-   color:#2196f3;
+        .topics_container__{
+            background-color:white;
+            background-image:linear-gradient(rgba(80, 3, 3, 0.26),rgba(19, 16, 16, 0.466)),url("https://assets.manutd.com/AssetPicker/images/0/0/10/126/687707/Legends-Profile_Cristiano-Ronaldo1523460877263.jpg");
+            overflow-y: scroll;
+            overflow-x:hidden;
+            height:800px;
+         background-size: cover;
+            border-radius: 6px;
+            }
+    .topics_container__heda>.MuiSvgIcon-root{
+       font-size:16px;
+       color:#2196f3;
+        }
+        .topics_stories{
+    
+            font-size:16px;
+            color:#a31173;      
+        }
+    .topics_container__ch_content{
+        display: flex;
+        align-items: center;
+         margin: 10px;
+       
+    justify-content:space-between;
+    border-bottom:1px solid lightgrey;
     }
-    .topics_stories{
-
-        font-size:16px;
-        color:#a31173;      
+    .topics_container__ch_img>img{
+    height:70px;
+    width:70px;
+    border-radius: 10px;
+    object-fit:cover;
     }
-.topics_container__ch_content{
+    .topics_container__ch_text>h4{
+    
+        font-weight: 500;
+        overflow:hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        text-overflow:ellipsis;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
+        justify-content: baseline;
+        font-size: inherit;
+        line-height: inherit;
+       
+        color: inherit;
+        overflow-wrap: anywhere;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
+        flex: 1;text-align: left;
+        margin: 10px;
+        
+    
+    }
+    .topics_container__ch_footer{
     display: flex;
     align-items: center;
-     margin: 10px;
-   
-justify-content:space-between;
-border-bottom:1px solid lightgrey;
-}
-.topics_container__ch_img>img{
-height:70px;
-width:70px;
-border-radius: 10px;
-object-fit:cover;
-}
-.topics_container__ch_text>h4{
-
-    font-weight: 500;
-    overflow:hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    text-overflow:ellipsis;
-    -webkit-box-orient: vertical;
-    white-space: wrap;
-    justify-content: baseline;
-    font-size: inherit;
-    line-height: inherit;
-   
-    color: inherit;
-    overflow-wrap: anywhere;
-    flex-wrap: wrap;
-    align-items: flex-start;
     
-    flex: 1;text-align: left;
-    margin: 10px;
-    
-
-}
-.topics_container__ch_footer{
-display: flex;
-align-items: center;
-
-margin: 10px;;
-}
-.topics_container__ch_footer>p{
-   color: #2196f3;
-   font-size:12px;
+    margin: 10px;;
     }
-    .topics_container__ch_footer>h6{
-        color: tomato;
-         }
-.topics_container__ch_text>p{
-
-   
-    overflow:hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    text-overflow:ellipsis;
-    -webkit-box-orient: vertical;
-    white-space: wrap;
-    justify-content: baseline;
-    font-size: inherit;
-    line-height: inherit;
-    font-weight: 400;
-    color: inherit;
-   
-    overflow-wrap: anywhere;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    .topics_container__ch_footer>p{
+       color: #2196f3;
+       font-size:12px;
+        }
+        .topics_container__ch_footer>h6{
+            color: tomato;
+             }
+    .topics_container__ch_text>p{
     
-    flex: 1;text-align: left;
-    margin: 10px;
-    
-    
-}
-.topics_container__icons{
-
-display: flex;
-    align-items: center;
-    justify-content:space-between;
-    margin:4px;
-}
-.topics_icons>.MuiSvgIcon-root{
-font-size: 16px;
-color: #2196f3;
+       
+        overflow:hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        text-overflow:ellipsis;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
+        justify-content: baseline;
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: 400;
+        color: inherit;
+       
+        overflow-wrap: anywhere;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
+        flex: 1;text-align: left;
+        margin: 10px;
+        
+        
     }
+    .topics_container__icons{
+    
+    display: flex;
+        align-items: center;
+        justify-content:space-between;
+        margin:4px;
+    }
+    .topics_icons>.MuiSvgIcon-root{
+    font-size: 16px;
+    color: #2196f3;
+        }

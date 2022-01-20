@@ -20,6 +20,7 @@ import Stories from 'react-insta-stories';
 import { useDispatch, useSelector } from 'react-redux';
 import CardPost from './CardPost';
 import LocalApi from './LocalAPI'
+import Button from './Buttons';
 import { getPosts } from './actions/Post';
 function useQuery1() {
   return new URLSearchParams(useLocation().search);
@@ -126,7 +127,7 @@ isLoading?(<div className="loader__news">
 <div className="Page__div">
   <LiveScoreAPi/>
 <HealthHead/>
- 
+<Button/>
  
 
  

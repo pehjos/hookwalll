@@ -1,0 +1,121 @@
+.datails_head{
+    background-color: white;
+    
+    }
+    
+    .postimage>img{
+    width:100%;
+    
+    }
+    .postimage_foot{
+    
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:10px;
+    }
+    .postimage_foot_icons{
+    display:flex;
+    
+    align-items:center;
+    justify-content:space-between;
+    margin:10px;  
+    color:grey; 
+    }
+    .creator{
+    display:flex;
+    border-left: 1px solid lightgrey;
+    border-bottom-left-radius: 10px; 
+    justify-content:space-between;
+    margin:10px;
+    flex-direction: column;
+    
+    }
+    .postimage_foot_icons>p{
+    
+        display:flex;
+       font-size:18px;
+        border-bottom-left-radius: 10px; 
+        justify-content:space-between;
+        margin:10px;
+    
+    }
+    .postimage_foot_icons>.MuiSvgIcon-root{
+    
+        display:flex;
+       font-size:18px;
+        border-bottom-left-radius: 10px; 
+        justify-content:space-between;
+        margin:10px;
+    
+    }
+    .postimage_foot_icons{
+    
+        display:flex;
+       
+        border-bottom-left-radius: 10px; 
+        justify-content:space-between;
+        margin:10px;
+    
+    }
+    .icon_link>a{
+    position:absolute;
+    margin-top:20px;
+    margin-left: 26px;
+    color:white;
+    
+    background-color: #2196f3;
+    padding: 5px;
+    }
+    .recomend>h6{
+    
+        display:flex;
+        font-size: 19px;
+        background-color:whitesmoke;
+        justify-content:space-between;
+        margin:10px;
+        padding:7px;
+        overflow:break-word;
+        flex-direction: column;
+        border-left: 1px solid #2196f3;
+        border-bottom-left-radius: 10px;    
+    }
+    .creator>p{
+     
+    display:flex;
+    font-size: 19px;
+    background-color:whitesmoke;
+    justify-content:space-between;
+    margin:10px;
+    padding:7px;
+    overflow:break-word;
+    flex-direction: column;
+    border-left: 1px solid #2196f3;
+    border-bottom-left-radius: 10px;
+    }
+    .creator>h4{
+        display:flex;
+        font-size: 19px;
+        background-color:whitesmoke;
+        justify-content:space-between;
+        margin:10px;
+        padding:7px;
+        overflow:break-word;
+        flex-direction: column;
+        border-left: 1px solid #2196f3;
+        border-bottom-left-radius: 10px;
+    
+    }
+    .creator>a{
+        display:flex;
+        font-size: 19px;
+        background-color:whitesmoke;
+        justify-content:space-between;
+        margin:10px;
+        padding:7px;
+        overflow:break-word;
+        flex-direction: column;
+        border-left: 1px solid #2196f3;
+        border-bottom-left-radius: 10px;
+    
+    }

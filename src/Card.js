@@ -324,7 +324,7 @@ return (
 <div className="card__header">
 <div className="card__headerleft">
 <NewReleasesRounded/>
-<a href={ProviderUrl} ><h3 >{newsrc}</h3></a>
+<a target="_self" href={ProviderUrl} ><h3 >{newsrc}</h3></a>
 </div>
 <Rightmobileslider className="drawer" open={states.right} anchor="bottom"
 onClose={toglesliders("right",false)}>

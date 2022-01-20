@@ -345,10 +345,34 @@ import {ThemeConsumer} from 'styled-components'
     font-size:${props=>props.theme.mode==='dark'?'19px':''};
     text-shadow:${props=>props.theme.mode==='dark'?' 0 0 3px yellow, 0 0 5px ':''}; 
   }
+  .recomend>h6{ 
+    background-color:${props=>props.theme.mode==='dark'?'rgb(19, 47, 76)':''};   
+  color:${props=>props.theme.mode==='dark'?'#a31173':'#111'};
+}
+.buttons_child>a{
+  background-color:${props=>props.theme.mode==='dark'?'rgb(19, 47, 76)':''};   
+  color:${props=>props.theme.mode==='dark'?'#21f3e9':'#111'};
+  border:${props=>props.theme.mode==='dark'?'1px solid #21f3e9':''};
+
+}
 
 
-
-
+  .creator>a{ 
+    background-color:${props=>props.theme.mode==='dark'?'rgb(19, 47, 76)':''};   
+  color:${props=>props.theme.mode==='dark'?'#a31173':'#111'};
+}
+  .creator>h4{ 
+    background-color:${props=>props.theme.mode==='dark'?'rgb(19, 47, 76)':''};   
+  color:${props=>props.theme.mode==='dark'?'#21f3e9':'#111'};
+}
+  .creator>p{ 
+    background-color:${props=>props.theme.mode==='dark'?'rgb(19, 47, 76)':''};   
+  color:${props=>props.theme.mode==='dark'?'#f4f4f4':'#111'};
+}
+.datails_head{
+  background-color:${props=>props.theme.mode==='dark'?'rgb(0, 30, 60)':''};
+    color:${props=>props.theme.mode==='dark'?'#f4f4f4':'#111'};
+  }
 .radio_card{
   background-color:${props=>props.theme.mode==='dark'?'rgb(0, 30, 60)':''};
     color:${props=>props.theme.mode==='dark'?'#f4f4f4':'#111'};
