@@ -6,7 +6,7 @@
     overflow-y: hidden;
     margin:10px;
     }
-    * Hide scrollbar for Chrome, Safari and Opera */
+    
     .buttons_child::-webkit-scrollbar {
       display: none;
     }
