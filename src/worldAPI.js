@@ -67,7 +67,8 @@ ProviderUrl="url"
 time={post.createdAt}
 share=""
 love={post.likeCount}
-comment=""
+_id={post._id}
+comment={post.comments.length}
 />    
 
 )

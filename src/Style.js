@@ -355,7 +355,7 @@ import {ThemeConsumer} from 'styled-components'
 }
 .buttons_child>a{
   background-color:${props=>props.theme.mode==='dark'?'rgb(19, 47, 76)':''};   
-  color:${props=>props.theme.mode==='dark'?'#21f3e9':'#111'};
+  color:${props=>props.theme.mode==='dark'?'white':'#111'};
   border:${props=>props.theme.mode==='dark'?'1px solid #21f3e9':''};
 
 }

@@ -76,13 +76,14 @@ tag="local"
 description={post1.description}
 seeMore="see more..."
 articlebody={post1.content}
-src={post1.author}
+rank="view"
+src="#news"
 ProviderUrl={post1.url}
 time={post1.publishedAt}
 share=""
 Clicks="@news"
 
-
+_id={post1._id}
 
 />
 ))} 

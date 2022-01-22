@@ -231,14 +231,7 @@ margin:5px;
         color:gray;
         margin:3px;
             }
-            .visible>.MuiSvgIcon-root{
-                display: flex;
-                font-size: 16px;
-                align-items: center;
-                justify-content:space-around;
-                color:tomato;
-                margin-top:6px;
-                    }
+           
     .card__image>img{
     height: 200px;
     object-fit: fill;
@@ -632,7 +625,7 @@ color: white;
 font-size: 60px;
         }
         .visible{
-font-size: 13px;
+font-size: 16px;
             display:flex;
             align-items: center;
         }
@@ -641,7 +634,7 @@ font-size: 13px;
 color: #2196f3;
         }
         .visible>.MuiSvgIcon-root{
-            font-size: 23px;
+            font-size: 18px;
             color: #2196f3;
                         display:flex;
                         align-items: center;

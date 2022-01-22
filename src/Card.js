@@ -10,41 +10,7 @@ import Hashtag from 'react-highlight-hashtags'
 import { motion } from "framer-motion"
 import Share from './Share'
 import Commentsection from './Commentsection'
-import {
-FacebookShareButton,
-LinkedinShareButton,
-TwitterShareButton,
-PinterestShareButton,
-VKShareButton,
-WhatsappShareButton,
-EmailShareButton,
-InstapaperShareButton,
-OKShareButton,
-ViberShareButton,
-TumblrShareButton,
-TelegramShareButton,
-RedditShareButton,
-LivejournalShareButton,
-LineShareButton,
-PocketShareButton,
-//icons and buttons
-FacebookIcon,
-TwitterIcon,
-LinkedinIcon,
-PinterestIcon,
-VKIcon,
-WhatsappIcon,
-EmailIcon,
-LineIcon,
-LivejournalIcon,
-TumblrIcon,
-InstapaperIcon,
-OKIcon,
-PocketIcon,
-RedditIcon,
-TelegramIcon,
-ViberIcon,
-} from "react-share";
+
 import ReactImageFallback from "react-image-fallback";
 import {
 Card,
@@ -72,9 +38,35 @@ CheckCircle
 
 
 
-function Cardnews({newsrc,Clicks,rank,src,title,newimage,seeMore,description,time,newstypeimg,love,fav,comment,share,Url,articlebody,ProviderUrl})
+function Cardnews({newsrc,Clicks,_id,tag,rank,src,title,newimage,seeMore,description,time,newstypeimg,love,fav,comment,share,Url,articlebody,ProviderUrl})
 //
 {
+//  share
+
+const canonical = document.querySelector("link[rel=canonical]");
+const url=`/post/${_id}`
+const shareDetails = { url, tag, title};
+
+const handleSharing = async () => {
+  if (navigator.share) {
+    try {
+      await navigator
+        .share(shareDetails)
+        .then(() =>
+          console.log("Hooray! Your content was shared to tha world")
+        );
+    } catch (error) {
+      console.log(`Oops! I couldn't share to the world because: ${error}`);
+    }
+  } else {
+    // fallback code
+    console.log(
+      "Web share is currently not supported on this browser. Please provide a callback"
+    );
+  }
+};
+
+
 const [favcolor ,setFavcolor]=useState(true)
 
 const changrcolor=()=>{
@@ -84,6 +76,11 @@ setFavcolor(false)
 }else{
 setFavcolor(true)
 }
+
+
+
+
+
 
 
 }
@@ -122,150 +119,10 @@ const sliderlist= slider=>(
 <div component="div"className="slider"
 onClick={togleslider(slider,false)}>
 
-<div className="icons">
-<p className="pehjos">Sharing is caring (pehjos❤)</p>
-<FacebookShareButton 
-url={Url}
-quote={description}
-title={title}
-className="sharebtn"
->
-{shareCount => <span className="myShareCountWrapper">{shareCount}</span>}
-<FacebookIcon className="socialIcon"
-size={"3rem"} // You can use rem value instead of numbers
-round
-/>
-</FacebookShareButton>
 
-<TwitterShareButton 
-url={Url}
-title={title}
-via={description}
-className="sharebtn"
 
->
-{/* <TwitterShareButton title={title}> */}
-<TwitterIcon className="socialIcon" size={"3rem"} round />
-</TwitterShareButton>
-{
 
-}
-<WhatsappShareButton  separator={description} title={title}
-url={Url}
-className="sharebtn">
 
-<WhatsappIcon className="socialIcon" size={"3rem"} round />
-</WhatsappShareButton>
-
-<LinkedinShareButton
-title="me"
-className="sharebtn"
-windowWidth={750}
-windowHeight={600}
-url={"http://www.camperstribe.com"}
->
-<LinkedinIcon className="socialIcon" size={"3rem"} round />
-</LinkedinShareButton>
-
-<PinterestShareButton
-className="sharebtn"
-url={"http://www.camperstribe.com"}
-url={String(window.location)}
-media=""
-windowWidth={1000}
-windowHeight={730}
->
-<PinterestIcon className="socialIcon" size={"3rem"} round />
-</PinterestShareButton>
-
-<VKShareButton image="" windowWidth={660} windowHeight={460}
-url={"http://www.camperstribe.com"}
-className="sharebtn"
->
-<VKIcon className="socialIcon" size={"3rem"} round />
-</VKShareButton>
-<EmailShareButton
-className="sharebtn" subject="hello" body="body">
-<EmailIcon className="socialIcon" size={"3rem"} round />
-</EmailShareButton>
-
-{/* new icons */}
-<TelegramShareButton 
-className="sharebtn"
-url={Url}
-
-title={title}
-
->
-{shareCount => <span className="myShareCountWrapper">{shareCount}</span>}
-<TelegramIcon className="socialIcon"
-size={"3rem"} // You can use rem value instead of numbers
-round
-/>
-</TelegramShareButton>
-
-<RedditShareButton
-url={Url}
-title={title}
-
-className="sharebtn"
-
->
-{/* <TwitterShareButton title={title}> */}
-<RedditIcon className="socialIcon" size={"3rem"} round />
-</RedditShareButton>
-{
-
-}
-<ViberShareButton  separator={description} title={title}
-url={Url}
-className="sharebtn"
->
-<ViberIcon className="socialIcon" size={"3rem"} round />
-</ViberShareButton>
-
-<TumblrShareButton
-title="me"
-className="sharebtn"
-windowWidth={750}
-windowHeight={600}
-url={"http://www.camperstribe.com"}
->
-<TumblrIcon className="socialIcon" size={"3rem"} round />
-</TumblrShareButton>
-
-<OKShareButton
-className="sharebtn"
-url={"http://www.camperstribe.com"}
-url={String(window.location)}
-media=""
-windowWidth={1000}
-windowHeight={730}
->
-<OKIcon className="socialIcon" size={"3rem"} round />
-</OKShareButton>
-
-<InstapaperShareButton image="" windowWidth={660} windowHeight={460}
-url={"http://www.camperstribe.com"}
-className="sharebtn"
->
-<InstapaperIcon className="socialIcon" size={"3rem"} round />
-</InstapaperShareButton>
-<LineShareButton subject="hello" body="body" className="sharebtn">
-<LineIcon className="socialIcon" size={"3rem"} round />
-</LineShareButton>
-<LivejournalShareButton image="" windowWidth={660} windowHeight={460}
-url={"http://www.camperstribe.com"} className="sharebtn">
-<LivejournalIcon className="socialIcon" size={"3rem"} round />
-</LivejournalShareButton>
-<PocketShareButton className="sharebtn" subject="hello" body="body">
-<PocketIcon className="socialIcon" size={"3rem"} round />
-</PocketShareButton>
-{/* end */}
-</div>
-{/* <Share
-
-/> */}
 <div className="footer">
 </div>
 </div>
@@ -412,7 +269,7 @@ onClose={togleslider("right",false)}>
 </div>
 <div className="foot">
 <Moment fromNow>{time}</Moment>
-<IconButton   onClick={togleslider("right",true)}>
+<IconButton onClick={handleSharing}>
 <div className="card__footericonsconten">
 <ShareOutlined/>
 

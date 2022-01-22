@@ -51,7 +51,7 @@ console.log(data)
            rank={post.rank}
            Clicks="clicks"
            
-           
+           _id={post._id}
            />
             ))}
         </div>

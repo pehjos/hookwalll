@@ -18,7 +18,7 @@ function StoryBtn () {
 
     return (
         <div className="cardstory">
-             <p>GLOBAL Health <Language/></p>
+          
              <div className="cardstorys">
            
             { data && data.articles.map(post1 => (

@@ -1,268 +1,150 @@
 .news{
-
-
-margin-top:50px;
-
-}
-
-.stories{
-margin: 10px;
-background-color:white;
-color:black;
-border-radius: 10px;
-z-index: 10;
-}
-.stories2>p{
-  text-shadow: 2px 2px 4px  ;
-padding: 5px;
-color:#2196f3;
-z-index: 10;
-}
-.stories2>.MuiSvgIcon-root{
-color:orange;
-text-shadow: 2px 2px 4px  
-}
-.stories2{
-align-items: center;
-display: flex;
-  justify-content: center;  
-        }
-.stort_title>p{
-z-index: 10;
-    font-family: 'Commissioner', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    overflow:hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    text-overflow:ellipsis;
-    -webkit-box-orient: vertical;
-    white-space: wrap;
-    justify-content: baseline;
-    color:white;
-    font-size: 15px;
-    overflow-wrap: anywhere;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    z-index: -9000000;
-    flex: 1;text-align: left;
-    margin: 10px;
-  margin-left: 5%;
-  margin-right: 5%;
-   background-color:black;
-   margin-top: 100px;
-padding: 2px;
-
-
-
-
-}
-element.style {
-  /* height: 100%; */
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0;
- z-index: 9; 
-}
-.loader__news{
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-height: 100%;
-margin-top: 5%;
-}
-
-
-/* storyBtn */
-.cardstorys{
-overflow-x: scroll;
-display: flex;
-flex-direction: row;
-/* background-color:white; */
-justify-content: space-between;
-}
-.cardstory>p{
-  font-family: 'Commissioner', sans-serif;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 600;
-border: 1px solid lightgray;
-border-radius: 3px;
-  color:#ffffff;
-  padding:5x;
-  font-size: 18px;
-background-color: #2196f3;
-
-
-z-index: 70;
-}
-
-.cardstory1{
-  height:260px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  display:flex;
-  align-items: center;
- color: #333;
- position: relative;
-  flex-direction: column;
-  bottom: 0px;
+  text-align:center;
   
- margin: 5px;
- width: 400px;
- border-radius:10px;
- background-color: white;
-}
-.cardstory1>img{
-  width: 100%;
-  border-radius:10px;
- height: 260px;
- object-fit:fill;
- background-color: rgba(22, 21, 21, 0.459);
-}
-.cardstory1>h6{
- 
-z-index: 18;
-  font-family: 'Commissioner', sans-serif;
-  font-family: 'Quicksand', sans-serif;
- 
-  overflow:hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  text-overflow:ellipsis;
-  -webkit-box-orient: vertical;
-  white-space: wrap;
-  justify-content: baseline;
-  color:#333;
-  font-size: 15px;
-  overflow-wrap: anywhere;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  background-color: rgba(22, 21, 21, 0.623);
-  flex: 1;text-align: left;
-  margin-top: -50px;
-}
-.cardstory1>h5{
-padding: 5px;
+  margin-top:50px;
+  
+  }
+  
+  .stories{
+  margin: 10px;
+  background-color:white;
+  color:black;
+  border-radius: 10px;
+  z-index: 10;
+  }
+  .stories2>p{
+    text-shadow: 2px 2px 4px  ;
+  padding: 5px;
   color:#2196f3;
-  font-size:18px;
-  margin:5px;
-  width: 70px;
-border-radius:15px;
-background-color: rgb(238, 234, 234);
-
-font-family: 'Commissioner', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
+  z-index: 10;
+  }
+  .stories2>.MuiSvgIcon-root{
+  color:orange;
+  text-shadow: 2px 2px 4px  
+  }
+  .stories2{
+  align-items: center;
+  display: flex;
+    justify-content: center;  
+          }
+  .stort_title>p{
+  z-index: 10;
+      font-family: 'Commissioner', sans-serif;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      overflow:hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      text-overflow:ellipsis;
+      -webkit-box-orient: vertical;
+      white-space: wrap;
+      justify-content: baseline;
+      color:white;
+      font-size: 15px;
+      overflow-wrap: anywhere;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      z-index: -9000000;
+      flex: 1;text-align: left;
+      margin: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+     background-color:black;
+     margin-top: 100px;
+  padding: 2px;
   
-
-}
-.cardstory1>p{
-
-  font-family: 'Commissioner', sans-serif;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 600;
-  overflow:hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  text-overflow:ellipsis;
-  -webkit-box-orient: vertical;
-  white-space: wrap;
-  justify-content: baseline;
-  color:#333;
-  font-size: 15px;
-  overflow-wrap: anywhere;
-  flex-wrap: wrap;
-  align-items: flex-start;
   
-  flex: 1;text-align: left;
-  margin: 10px;  
-}
-
-/* crypto */
-.cardstorys2{
+  
+  
+  }
+  element.style {
+    /* height: 100%; */
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+   z-index: 9; 
+  }
+  .loader__news{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  }
+  
+  
+  /* storyBtn */
+  .cardstorys{
   overflow-x: scroll;
-  overflow-y: hidden;
   display: flex;
   flex-direction: row;
   /* background-color:white; */
   justify-content: space-between;
   }
-  .cardstory2>p{
+  .cardstory>p{
     font-family: 'Commissioner', sans-serif;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
-   text-align: left; 
-  border-radius: 5px;
-    color:#333;
-    padding:10px;
-    position:absolute;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+    color:#ffffff;
+    padding:5x;
     font-size: 18px;
-  border:  1px solid lightgrey;
-  width:150px;
-  margin: 10px;
-  background-color: white;
+  background-color: #2196f3;
+  
+  
+  z-index: 70;
   }
   
-  .cardstory12{
-  height:260px;
+  .cardstory1{
+    height:260px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     display:flex;
     align-items: center;
    color: #333;
    position: relative;
     flex-direction: column;
+    bottom: 0px;
+    
    margin: 5px;
    width: 400px;
    border-radius:10px;
    background-color: white;
   }
-  .cardstory12>img{
-    width: 400px;
+  .cardstory1>img{
+    width: 100%;
     border-radius:10px;
-
-    height:260px;
-   object-fit: fill;
-  }
-  .cardstory12>.MuiSvgIcon-root{
-   margin-top: 10px;
-   color: white;
-   position: absolute;
-   border-radius: 50px;
-   margin-left: 190px;
-   background-color:rgba(22, 21, 21, 0.459);
-  }
-  .cardstory1>.MuiSvgIcon-root{
-    margin-top: 10px;
-    color: white;
-    position: absolute;
-    border-radius: 50px;
-    margin-left: 190px;
-    background-color:rgba(22, 21, 21, 0.459);
-   }
-  .cardstory12>h6{
- margin-top:-100px;
- font-family: 'Commissioner', sans-serif;
- font-family: 'Quicksand', sans-serif;
- font-weight: 600;
- font-size:16px;
- color:white;
-background-color:rgba(22, 21, 21, 0.459);
- overflow: hidden;
+   height: 260px;
+   object-fit:fill;
+   background-color: rgba(22, 21, 21, 0.459);
   }
   .cardstory1>h6{
-    margin-top:-100px;
+   
+  z-index: 18;
     font-family: 'Commissioner', sans-serif;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    font-size:16px;
-    color:white;
-   background-color:rgba(22, 21, 21, 0.459);
-    overflow: hidden;
-     }
-  .cardstory12>{
+   
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow:ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+    justify-content: baseline;
+    color:#333;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: rgba(22, 21, 21, 0.623);
+    flex: 1;text-align: left;
+    margin-top: -50px;
+  }
+  .cardstory1>h5{
   padding: 5px;
-    color:#2195f396;
+    color:#2196f3;
     font-size:18px;
     margin:5px;
     width: 70px;
@@ -275,8 +157,8 @@ background-color:rgba(22, 21, 21, 0.459);
     
   
   }
-  .cardstory12>p{
- 
+  .cardstory1>p{
+  
     font-family: 'Commissioner', sans-serif;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
@@ -296,3 +178,121 @@ background-color:rgba(22, 21, 21, 0.459);
     flex: 1;text-align: left;
     margin: 10px;  
   }
+  
+  /* crypto */
+  .cardstorys2{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    /* background-color:white; */
+    justify-content: space-between;
+    }
+    .cardstory2>p{
+      font-family: 'Commissioner', sans-serif;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+     text-align: left; 
+    border-radius: 5px;
+      color:#333;
+      padding:10px;
+      position:absolute;
+      font-size: 18px;
+    border:  1px solid lightgrey;
+    width:150px;
+    margin: 10px;
+    background-color: white;
+    }
+    
+    .cardstory12{
+    height:260px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      display:flex;
+      align-items: center;
+     color: #333;
+     position: relative;
+      flex-direction: column;
+     margin: 5px;
+     width: 400px;
+     border-radius:10px;
+     background-color: white;
+    }
+    .cardstory12>img{
+      width: 400px;
+      border-radius:10px;
+  
+      height:260px;
+     object-fit: fill;
+    }
+    .cardstory12>.MuiSvgIcon-root{
+     margin-top: 10px;
+     color: white;
+     position: absolute;
+     border-radius: 50px;
+     margin-left: 190px;
+     background-color:rgba(22, 21, 21, 0.459);
+    }
+    .cardstory1>.MuiSvgIcon-root{
+      margin-top: 10px;
+      color: white;
+      position: absolute;
+      border-radius: 50px;
+      margin-left: 190px;
+      background-color:rgba(22, 21, 21, 0.459);
+     }
+    .cardstory12>h6{
+   margin-top:-100px;
+   font-family: 'Commissioner', sans-serif;
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 600;
+   font-size:16px;
+   color:white;
+  background-color:rgba(22, 21, 21, 0.459);
+   overflow: hidden;
+    }
+    .cardstory1>h6{
+      margin-top:-100px;
+      font-family: 'Commissioner', sans-serif;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      font-size:16px;
+      color:white;
+     background-color:rgba(22, 21, 21, 0.459);
+      overflow: hidden;
+       }
+    .cardstory12>{
+    padding: 5px;
+      color:#2195f396;
+      font-size:18px;
+      margin:5px;
+      width: 70px;
+    border-radius:15px;
+    background-color: rgb(238, 234, 234);
+    
+    font-family: 'Commissioner', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+      
+    
+    }
+    .cardstory12>p{
+   
+      font-family: 'Commissioner', sans-serif;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      overflow:hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      text-overflow:ellipsis;
+      -webkit-box-orient: vertical;
+      white-space: wrap;
+      justify-content: baseline;
+      color:#333;
+      font-size: 15px;
+      overflow-wrap: anywhere;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      
+      flex: 1;text-align: left;
+      margin: 10px;  
+    }

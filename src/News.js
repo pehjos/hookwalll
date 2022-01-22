@@ -21,6 +21,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import CardPost from './CardPost';
 import LocalApi from './LocalAPI'
 import Button from './Buttons';
+
 import { getPosts } from './actions/Post';
 function useQuery1() {
   return new URLSearchParams(useLocation().search);
@@ -125,10 +126,9 @@ isLoading?(<div className="loader__news">
 }
 <div className="ap">
 <div className="Page__div">
-  <LiveScoreAPi/>
+  {/* <LiveScoreAPi/> */}
 <HealthHead/>
 <Button/>
- 
 
  
   {posts.map((post,index)=>(  
@@ -150,15 +150,17 @@ seeMore="see more..."
 articlebody={post.description}
 ProviderUrl="url"
 time={post.createdAt}
-share="100"
+share=""
 photo={post.photo}
 love={post.likeCount}
-comment="79"
+comment={post.comments.length}
+_id={post._id}
 />
 
   ))))}
   {/* <Ghanaprimier/> */}
   <ScienceHeader/>
+  <Storybtn/>
  <Topics/>
 <ApiNews/>
 <TechHeader/>
