@@ -467,7 +467,7 @@ isVideoplaying?"":(
 
 
 <div className="card__footericonscontent">
-{stated?(<Commentsection onClick={ShowWatch} />):(<ChatBubbleOutline id="chatbuble" onClick={ShowWatch}/>)}
+{stated?(<Commentsection post={post} onClick={ShowWatch} />):(<ChatBubbleOutline id="chatbuble" onClick={ShowWatch}/>)}
 <p>{comment}</p>
 </div>
 </IconButton>

@@ -170,6 +170,7 @@ setTags(true)
   message:'',
   tags:'',
   image:'',
+  comments:'',
   video:'',
   accountType:'',
   description:'',});

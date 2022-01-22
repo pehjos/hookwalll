@@ -1,14 +1,33 @@
-import React,{useState} from 'react'
+import React,{useState, useRef} from 'react'
 import 'emoji-mart/css/emoji-mart.css'
 import { Picker } from 'emoji-mart'
-
+import { useDispatch } from 'react-redux';
+import { commentPost } from './actions/Post';
 import {CameraAlt,Send,Mood,Replay, Reply, FavoriteBorder, Favorite, Close
-
-
 
 } from '@material-ui/icons'
 import './commentsec.css'
-function Commentsection() {
+import { Typography, TextField, Button } from '@material-ui/core/';
+function Commentsection({post}) {
+
+    const user = JSON.parse(localStorage.getItem('profile'));
+    const [comment, setComment] = useState('');
+    const dispatch = useDispatch();
+    const [comments, setComments] = useState(post?.comments);
+    const commentsRef = useRef();
+  
+    const handleComment = async () => {
+    const newComments = await dispatch(commentPost(`${user?.result?.name}: ${message}`, post._id));
+  
+      SetMessage('');
+      setComments(newComments);
+  console.log(message)
+    //   commentsRef.current.scrollIntoView({ behavior: 'smooth',top:500 });
+    };
+
+
+
+
 // emoji
 const [emojiPickerState, SetEmojiPicker] = useState(false);
 const [message, SetMessage] = useState("");
@@ -85,15 +104,15 @@ setImage(false)
        {image? (<img accept=".png,.jpg,.jpeg,.gif" id="preview"/>):""}
           <div className="submainheader">
           <input onClick={handleEmtyInput} onChange={uploadpreview} accept=".png,.jpg,.jpeg,.gif" type="file" id="btnfile"/>       
-{image?(<Close onClick={delpreview} />):(<CameraAlt onClick={myfile}/>)}
+{/* {image?(<Close onClick={delpreview} />):(<CameraAlt onClick={myfile}/>)} */}
 
 <div className="input__Text">
 <input placeholder="Add your toughts..."
   value={message}
   onChange={event => SetMessage(event.target.value)}
-
+ 
 />
-<Send/>
+<Send disabled={!comment.length} color="primary" variant="contained" onClick={handleComment}/>
 </div>
 
 {emojistate?(<Close onClick={Emojicall}/>): <Mood onClick={Emojicall}/>}
@@ -102,118 +121,45 @@ setImage(false)
 
 
 {emojistate?(<Picker  onSelect={emoji => SetMessage(message + emoji.native) }color="#2196f3"title="pehjos"style={{marginTop:'50px'}} />):(<div className="contentComs">
-<div className="contentCom">
+
+
+
+         
+<div className="contentComentname_all">  
+{comments?.map((c, i) => (
+          
+ 
+
+         
+<div key={i} className="contentCom">
 <div className="contentComent">
 <div className="contentComentname">
-<p>Pehjos Post</p>
+
+<p><strong>{c.split(': ')[0]}</strong></p>
 
     
 </div>
 <div className="contentComenttext">
-<p>This where there comments of all users will be display, so after implementing this ,you will see it .
-😍😘🥰😅
+<p> {c.split(':')[1]}
+
 </p> 
 </div>
 </div>
-<div className="contentComentreply">
+
+{/* <div className="contentComentreply">
 <div className="contentComentreply1">
 <Reply/>
 <p>reply</p>
 </div> 
 {stated?(<Favorite onClick={ShowWatch} style={{color:'tomato'}}/>):(<FavoriteBorder onClick={ShowWatch}/>)}
-</div> 
+</div>  */}
 
 </div>
-<div className="contentCom">
-<div className="contentComent">
-<div className="contentComentname">
-<p>Pehjos Post</p>
-
-    
-</div>
-<div className="contentComenttext">
-<p>This where there comments of all users will be display, so after implementing this ,you will see it .
-😍😘🥰😅
-</p> 
-</div>
-</div>
-<div className="contentComentreply">
-<div className="contentComentreply1">
-<Reply/>
-<p>reply</p>
-</div> 
-{stated?(<Favorite onClick={ShowWatch} style={{color:'tomato'}}/>):(<FavoriteBorder onClick={ShowWatch}/>)}
-</div> 
-
-</div>
-<div className="contentCom">
-<div className="contentComent">
-<div className="contentComentname">
-<p>Pehjos Post</p>
-
-    
-</div>
-<div className="contentComenttext">
-<p>This where there comments of all users will be display, so after implementing this ,you will see it .
-😍😘🥰😅
-</p> 
-</div>
-</div>
-<div className="contentComentreply">
-<div className="contentComentreply1">
-<Reply/>
-<p>reply</p>
-</div> 
-{stated?(<Favorite onClick={ShowWatch} style={{color:'tomato'}}/>):(<FavoriteBorder onClick={ShowWatch}/>)}
-</div> 
-
-</div>
-<div className="contentCom">
-<div className="contentComent">
-<div className="contentComentname">
-<p>Pehjos Post</p>
-
-    
-</div>
-<div className="contentComenttext">
-<p>This where there comments of all users will be display, so after implementing this ,you will see it .
-😍😘🥰😅
-</p> 
-</div>
-</div>
-<div className="contentComentreply">
-<div className="contentComentreply1">
-<Reply/>
-<p>reply</p>
-</div> 
-{stated?(<Favorite onClick={ShowWatch} style={{color:'tomato'}}/>):(<FavoriteBorder onClick={ShowWatch}/>)}
-</div> 
-
-</div>
-<div className="contentCom">
-<div className="contentComent">
-<div className="contentComentname">
-<p>Pehjos Post</p>
-
-    
-</div>
-<div className="contentComenttext">
-<p>This where there comments of all users will be display, so after implementing this ,you will see it .
-😍😘🥰😅
-</p> 
-</div>
-</div>
-<div className="contentComentreply">
-<div className="contentComentreply1">
-<Reply/>
-<p>reply</p>
-</div> 
-{stated?(<Favorite onClick={ShowWatch} style={{color:'tomato'}}/>):(<FavoriteBorder onClick={ShowWatch}/>)}
-</div> 
-
+        ))}
 </div>
           </div>
 )}
+ {/* <div className="content_scroll" ref={commentsRef} /> */}
           </div>    
     
 

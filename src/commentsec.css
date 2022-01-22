@@ -1,19 +1,52 @@
 .mainsection{
     background-color: white;
-    
+    position:absolute;
     height:150vh;
     margin-top: 570px;
-    margin-left: 26px;
+  width: 350px;
     z-index: 10;
     
     }
-    .contentComs{
-    overflow: scroll;
-    height: 370px;
     
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .emoji-mart-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .emoji-mart-scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .contentComs::-webkit-scrollbar {
+    display: none;
+  }
+  .emoji-mart-anchors svg{
+color: #2196f3;
+
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .contentComs {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+    .contentComs{
+    overflow-y: scroll;
+    height: 370px;
+    overflow-x: hidden
     
     }
-    
+    .contentComent{
+margin-left: 10px;
+
+
+    }
+    .content_scroll{
+height:50px;
+margin-top:400px;
+
+    }
     .mainsection>.MuiSvgIcon-root{
     
     color: red;
@@ -27,7 +60,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 5px;
-    
+  
     }
     
     .input__Text{
@@ -51,27 +84,64 @@
     outline-width: 0;
     border: none;
     height: 30px;
-    width: 280px;
+
     background-color: transparent; 
     border-radius: 5;
     font-size: 17px;
+    width: 100%;
     margin-left: 11px;
     }
     .contentComenttext{
     text-align: left;
-    margin: 10px;
+   
     
-    
+   
     }
+    /* .emoji-mart-category-list{
+background-color: #2196f3;
+
+
+    } */
+    .emoji-mart-category-label >span{
+
+display: none;
+
+    }
+    .emoji-mart {
+border:none;
+        background-color: white;
+    }
+    .emoji-mart-search input{
+
+        display: none;   
+    }
+    .emoji-mart-emoji{
+font-size:9px;
+
+    }
+    .contentComenttext>p{
+        text-align: left;
+        padding: 10px;
+        margin-left: -px; 
+        
+        }
     .contentComentname{
     font-weight: 800;
         text-align: left;
-        margin: 10px;  
+        margin: 10px; 
+        
     }
     .contentComent{
     background-color: whitesmoke;
     border-radius: 9px;
-    margin: 10px;
+    margin-left: 1px;
+   
+    }
+    .contentComentname_all{
+margin: 10px;
+        border-left: 1px solid #2196f3;   
+        border-top-left-radius: 10px; 
+        border-bottom-left-radius: 10px;   
     }
     .contentComentreply1{
     display: flex;

@@ -16,8 +16,8 @@ import {ThemeConsumer} from 'styled-components'
    
    }
     .input__Text{
-      background-color:${props=>props.theme.mode==='dark'?'#2d383c':'#e1e9ee'};
- 
+      background-color:${props=>props.theme.mode==='dark'?'rgb(19, 47, 76)':'#e1e9ee'};
+   border:${props=>props.theme.mode==='dark'?'rgb(19, 47, 76)':'#e1e9ee'};
       }
 .contentComenttext{
   color:${props=>props.theme.mode==='dark'?'lightgrey':''};
@@ -51,12 +51,16 @@ import {ThemeConsumer} from 'styled-components'
       color:${props=>props.theme.mode==='dark'?'lightgrey':'black'};
 
     }
-    .contentComentreply{
+    .contentComentname>p{
 
-      border-bottom:${props=>props.theme.mode==='dark'?'1px solid gray':''};
+      color:${props=>props.theme.mode==='dark'?'rgb(42, 243, 250)':''};
     }
     .mainsection{
-      background-color:${props=>props.theme.mode==='dark'?'#171f24':''};
+      background-color:${props=>props.theme.mode==='dark'?'rgb(0, 30, 60)':''};
+
+    }
+    .emoji-mart {
+      background-color:${props=>props.theme.mode==='dark'?'rgb(0, 30, 60)':''};
 
     }
     .app_leftsearch{
@@ -81,7 +85,7 @@ import {ThemeConsumer} from 'styled-components'
 
     }
     .contentComent{
-      background-color:${props=>props.theme.mode==='dark'?'#2d383c':''};
+      background-color:${props=>props.theme.mode==='dark'?'rgb(19, 47, 76)':''};
 
     }
     .contentComentreply1{
