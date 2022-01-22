@@ -81,7 +81,7 @@ Photo
 } from '@material-ui/icons'
 
 
-function CardPost({newsrc,tag,newtype,title,newimage,seeMore,description,time,newstypeimg,love,comment,share,Url,articlebody,ProviderUrl,setCurrentId,post,video,photo})
+function CardPost({newsrc,tag,_id,title,newimage,seeMore,description,time,newstypeimg,love,comment,share,Url,articlebody,ProviderUrl,setCurrentId,post,video,photo})
 
 {
 
@@ -174,14 +174,39 @@ const Likes = () => {
   return <><ThumbUpAltOutlined fontSize="small" />&nbsp;</>;
 };
 
-  
+
+
+
   // open post
+const url=`hookwal.com/post/${_id}`
   const scrolltop= () => window.scrollTo({top:"0",behavior:"smooth"})
 const history=useHistory()
 const openPost=()=>
 {
 history.push(`/post/${post._id}`)
 }
+
+
+//  share
+let shareData = {
+  title: 'hookwall',
+  text: 'Learn web development on MDN!',
+  url: url,
+}
+
+const btn = document.querySelector('button');
+const resultPara = document.querySelector('.result');
+
+btn.addEventListener('click', () => {
+  navigator.share(shareData)
+    .then(() =>
+      resultPara.textContent = 'MDN shared successfully'
+    )
+    .catch((e) =>
+      resultPara.textContent = 'Error: ' + e
+    )
+});
+
 
 // comment component
 const [stated, setStated] = useState(false)
@@ -212,7 +237,7 @@ onClick={togleslider(slider,false)}>
 <div className="icons">
 <p className="pehjos">Sharing is caring (pehjos❤)</p>
 <FacebookShareButton 
-url={Url}
+url={url}
 quote={description}
 title={title}
 className="sharebtn"
@@ -225,7 +250,7 @@ round
 </FacebookShareButton>
 
 <TwitterShareButton 
-url={Url}
+url={url}
 title={title}
 via={description}
 className="sharebtn"
@@ -238,7 +263,7 @@ className="sharebtn"
 
 }
 <WhatsappShareButton  separator={description} title={title}
-url={Url}
+url={url}
 className="sharebtn">
 
 <WhatsappIcon className="socialIcon" size={"3rem"} round />
@@ -256,8 +281,8 @@ url={"http://www.camperstribe.com"}
 
 <PinterestShareButton
 className="sharebtn"
-url={"http://www.camperstribe.com"}
-url={String(window.location)}
+url={url}
+url={url}
 media=""
 windowWidth={1000}
 windowHeight={730}
@@ -279,7 +304,7 @@ className="sharebtn" subject="hello" body="body">
 {/* new icons */}
 <TelegramShareButton 
 className="sharebtn"
-url={Url}
+url={url}
 
 title={title}
 
@@ -478,6 +503,10 @@ isVideoplaying?"":(
 <p>{share}</p>
 </div>
 </IconButton>
+
+<p><button>Share MDN!</button></p>
+
+<p class="result"></p>
 
 <Rightmobileslider className="drawer" open={state.right} anchor="bottom"
 onClose={togleslider("right",false)}>

@@ -74,6 +74,7 @@ time={post.createdAt}
 share=""
 love={post.likeCount}
 comment={post.comments.length}
+_id={post._id}
 />    
 
 )
