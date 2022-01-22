@@ -7,7 +7,6 @@ import {getPosts} from './actions/Post'
 import Loader from "react-loader-spinner";
 import Card from './Card'
 import {Skeleton,Stack} from '@mui/material'
-import InfiniteScroll from "react-infinite-scroller";
 import { useInfiniteQuery } from "react-query";
 import CardPost from "./CardPost";
 import {fetchPosts2} from './api/index'
