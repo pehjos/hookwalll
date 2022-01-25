@@ -401,6 +401,43 @@ import {ThemeConsumer} from 'styled-components'
     color:${props=>props.theme.mode==='dark'?'white':''};
     
     }
+.coin_contain{
+
+  background-color:${props=>props.theme.mode==='dark'?'rgb(0, 30, 60)':''};
+  color:${props=>props.theme.mode==='dark'?'#f4f4f4':'#111'};
+
+
+}
+.coin-search>form>input{
+
+  background-color:${props=>props.theme.mode==='dark'?'rgb(0, 30, 60)':''};
+  color:${props=>props.theme.mode==='dark'?'#f4f4f4':'#111'};
+
+
+}
+.coin-search{
+
+  background-color:${props=>props.theme.mode==='dark'?'rgb(0, 30, 60)':''};
+  color:${props=>props.theme.mode==='dark'?'#f4f4f4':'#111'};
+
+
+}
+.coin_contain1{
+
+  background-color:${props=>props.theme.mode==='dark'?'rgb(0, 30, 60)':''};
+  color:${props=>props.theme.mode==='dark'?'#f4f4f4':'#111'};
+
+
+}
+.profile_img{
+
+  background-color:${props=>props.theme.mode==='dark'?'rgb(0, 30, 60)':''};
+  color:${props=>props.theme.mode==='dark'?'#f4f4f4':'#111'};
+
+}
+
+
+
     `
     export default Globalstyle;
     

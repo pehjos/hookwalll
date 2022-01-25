@@ -35,7 +35,7 @@
     
     overflow-y: scroll;
     overflow-x:hidden;
-    height:400px;
+    height:450px;
     border-radius: 6px;
     }
     #wg-api-football-fixture-modal{
@@ -47,7 +47,7 @@
     
     
     }
-   
+    
     .api_football_modal_close{
         z-index: 100;
       
