@@ -18,7 +18,7 @@ fetch('https://saurav.tech/NewsAPI/top-headlines/category/technology/in.json').t
 return (
 <div className="topics">
 <div className="topics_container">
-    <p>Techlines</p>
+  
 <div className="topics_container__ch">
 <div className="topics_container__ch_head">
     <div className="topics_container__heda">

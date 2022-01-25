@@ -102,12 +102,12 @@ onChange={ uploadPrev}
 <img accept="image/*" id="prev"/>
 {user.result.profileImg?(<EditOutlined id="photo"onClick={choseImg}/>):""}
 {user.result.profileImg?(<p></p>):""}
-{user.result.profileImg?"":(<p onClick={handleSubmit}>INSERT</p>)}
+{!user.result.profileImg?"":(<p onClick={handleSubmit}>INSERT</p>)}
 <h5>{user.result?.name}</h5>
 <h6>{user.result?.accountType}<h5>(INDIVIDUAL BLOGGER)</h5></h6>
 </div>
 <div className="profile_Links">
-<p onClick={() => dispatch(userStatus(user.result._id))}>VERIY</p>
+<p onClick={() => dispatch(userStatus(user.result._id))}>VERIFY</p>
 
 </div>
 <div className="profile_Links">
@@ -135,9 +135,9 @@ seeMore="see more..."
 articlebody={post.description}
 ProviderUrl="url"
 time={post.createdAt}
-share="100"
+share=""
 love={post.likeCount}
-comment="79"
+comment={post.comments.length}
 />
 ))}
 </div>)

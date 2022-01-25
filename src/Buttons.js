@@ -29,9 +29,9 @@ function Buttons() {
 <p>Cryptocurrency</p>
 </Link>
 <Link to="/rate">
-
 <p>Rate</p>
 </Link>
+
  
 
  </div>

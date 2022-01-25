@@ -60,7 +60,7 @@
         }
     .post{
     
-    margin-top: 490px;
+    margin-top: 560px;
         position: absolute;
     
         display: flex;
@@ -127,7 +127,7 @@
          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
          color: orange;
          font-size: 18px;
-    
+    text-transform: uppercase;
         
         }
         .profile_profile>h6>h5{

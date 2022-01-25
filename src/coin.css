@@ -1,0 +1,59 @@
+.coin_contain_head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:10px;
+    
+    }
+    .coin_contain_head>img{
+       width:50px;
+        margin:10px;
+        height:50px;
+        }
+        .coin_contain_head>h1{
+    font-size:18px;
+             }
+             .coin_contain_head>p{
+                font-size:18px;
+                color:orange;
+                         }
+            .coin_contain_prices1{
+                display:flex;
+              
+                justify-content:space-between;
+                margin:10px;
+    
+    flex-direction: column;
+            }
+            .coin_contain_prices{
+                display:flex;
+              
+                justify-content:space-between;
+                margin:10px;
+    
+    
+            }
+    .red{
+        color:red;
+    }
+    .green{
+        color:green;
+    }
+    .coin_contain{
+    margin: 10px;
+    background-color: white;
+    
+    }
+    .coin_contain_prices1>p{
+        display:flex;
+      
+        justify-content:space-between;
+        margin:2px;
+    font-size: 18px;
+    flex-direction: column;
+    }
+    .coin_contain1{
+        margin: 3px;
+        background-color: white;
+        width: 230px;
+        }

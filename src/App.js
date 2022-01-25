@@ -7,6 +7,7 @@ import BottomNav from './BotoMnav'
 import SoccerLive from './SoccerLive'
 import VolleyLive from './VolleyLive'
 import Star from './Stars'
+import Sharer from './Sharer'
 import BottonNav from './BotoMnav'
 import RadioCard from './RadioCard'
 import  Quickac from './Quickac'
@@ -36,10 +37,10 @@ import News from './News'
 import World from './World'
 import Sports from './Sports'
 import Postdetail from './Postdetail'
-
+import BitcoinApi from './BitcoinApi'
 import Science from './Science'
 import Technology from './Technology'
-import Crypto from './Crypto';
+import Currency from './Currency'
 //GLOBAL STYLE
 function useQuery(){
   return new URLSearchParams(useLocation().image);
@@ -96,11 +97,18 @@ return (
 <Commentrybody setCurrentId={setCurrentId}/>
 
 </Route>
-<Route path="/profile">
+<Route path="/profile/:id">
 <Profile/>
+<BottomNav/>
 </Route>
 <Route path="/radio">
 <RadioCard/>
+</Route>
+<Route path="/crypto">
+<BitcoinApi/>
+</Route>
+<Route path="/rate">
+<Currency/> 
 </Route>
 <Route path="/hook">
 <Search/>
@@ -251,7 +259,7 @@ return (
 
 <div className="app__bodyfeed">
 <World/>
-{/* <Star/> */}
+<Star/>
 <Quickac/>
 </div>
 
@@ -295,7 +303,7 @@ return (
 </div>
 
 <div className="app__bodyfeed">
-{/* <Star/> */}
+<Star/>
 <Quickac/>
 </div>
 
@@ -319,7 +327,7 @@ return (
 
 <div className="app__bodyfeed">
 <Science/>
-{/* <Star/> */}
+<Star/>
 <Quickac/>
 </div>
 
@@ -342,7 +350,7 @@ return (
 
 <div className="app__bodyfeed">
 <Technology/>
-{/* <Star/> */}
+<Star/>
 <Quickac/>
 </div>
 

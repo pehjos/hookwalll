@@ -130,10 +130,10 @@ return (
   < ArrowBackOutlined/>
   </Link>
 <h3>REGISTER YOUR RADIO STATION WITH HOOKSTUDIO</h3> 
-<div className="btnSearc">
+{/* <div className="btnSearc">
 <input type="text" placeholder="Search station"/>
 <Search/>
-</div>
+</div> */}
 </div> 
 {  fm.map(station => (
 

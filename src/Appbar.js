@@ -11,10 +11,12 @@ import Rightmobileslider from'@material-ui/core/Drawer'
 import Footerbar from './Footerbar'
 import {makeStyles} from '@material-ui/core/styles'
 import Navmenu from './Navmenu'
+import {getPostsBySearch,getPosts} from './actions/Post'
+
 
 import {
 
-Menu,RadioOutlined,
+Menu,
 ExitToAppOutlined,
 VideoLibraryOutlined,
 StarBorderRounded,
@@ -43,21 +45,11 @@ ListItemText,
 import theme from 'styled-theming'
 
 
-const toglemode=()=>{
-theme.setTheme(
-theme.mode==='dark'?{...theme,mode:'light'}
-:{...theme,mode:'dark'}
 
-)
+function useQuery() {
+    return new URLSearchParams(useLocation().search);
+  }
 
-
-}
-const reload=()=>{
-    window.location.reload()
-
-}
-
-//
 const style= makeStyles(theme=>({
 
 menuSliderContainer:{
@@ -89,12 +81,52 @@ color:" rgb(233, 174, 65)"
 
 
 function Appbar() {
-// AUTHENTICATION
 
 const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
 const dispatch = useDispatch();
 const location = useLocation();
 const history = useHistory();
+const query = useQuery();
+const page = query.get('page') || 1;
+const searchQuery = query.get('searchQuery');
+const [tags, setTags] = useState([]);
+
+const [search,setSearch]=useState('')
+const [currentId, setCurrentId] = useState(null);
+
+
+useEffect(() => {
+dispatch(getPosts());
+}, [currentId, dispatch]);
+
+const handleKeyPress=(e)=>{
+
+
+if(e.keyCode==13){
+searchPost()
+
+}
+}
+const searchPost=()=>{
+if(search.trim()){
+dispatch(getPostsBySearch({search}))
+history.push(`/posts/search?searchQuery=${search || 'none'}&tags=${tags.join(',')}`);
+}else{
+
+history.push('/')
+}
+}
+
+
+
+const openPost=()=>
+{
+history.push(`/profile/${user.result?._id}`)
+}
+
+
+// AUTHENTICATION
+
 console.log(user)
 
 const logout = () => {
@@ -134,11 +166,11 @@ onClick={togleslider(slider,false)}>
 <div className="toolbar">
 {user?
 (<div className="child">
-<Link to="/profile">
-<Avatar style={{width:80,height:80,}} alt={user.result.name} src={user.result.profileImg}>
+
+<Avatar onClick={openPost}  style={{width:80,height:80,}} alt={user.result.name} src={user.result.profileImg}>
 {user.result.name.charAt(0)}
 </Avatar>
-</Link>
+
 <p>{user.result.name}</p>
 <ExitToAppOutlined onClick={logout}/>
 </div>):
@@ -166,8 +198,9 @@ return (
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7zs4NFX0z6W3-6lNbY8wEdGI2dY60dqrcYA&usqp=CAU"/>
 <div className="btnSearch">
-<input type="text" placeholder="Search..."/>
-<Search/>
+<input value={search}onChange={(e)=>setSearch(e.target.value) } name="search"
+        onKeyPress={handleKeyPress} type="text" placeholder="Search..."/>
+<Search onClick={searchPost}/>
 </div>
 <Hidden smUp={true}>
 < Explore/>
@@ -228,7 +261,7 @@ return (
 <IconButton >
 <div className="iconName">
 <NavLink activeClassName="active_link" to ="/radio">
-<RadioOutlined className="blinking" style={{padding: 1 ,fontSize:26}} />
+<WifiTetheringTwoTone className="blinking" style={{padding: 1 ,fontSize:26}} />
 {/* <p>Market</p> */}
 </NavLink>
 </div>

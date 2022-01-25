@@ -92,7 +92,7 @@ return (
 <p>{description}</p>
 <div className="topics_container__ch_footer">
 <p>{name}</p>--
-<h6>{moment(post.createdAt).fromNow()}</h6>
+<h6>{moment(createdAt).fromNow()}</h6>
 </div>
 </div>
 <div className="topics_container__ch_img">

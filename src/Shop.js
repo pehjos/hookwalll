@@ -33,10 +33,10 @@ return (
   < ArrowBackOutlined/>
   </Link>
 <h3>LEARN MORE ABOUT HOW YOU CAN SELL ON HOOKWALL</h3> 
-<div className="btnSearc">
+{/* <div className="btnSearc">
 <input type="text" placeholder="Search Products..."/>
 <Search/>
-</div>
+</div> */}
 </div> 
 
 <div className="shop_card">

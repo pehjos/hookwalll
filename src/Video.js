@@ -16,10 +16,10 @@ function Video() {
   < ArrowBackOutlined/>
   </Link>
 <h3>HOOKSTUDIO TV BROADCAST</h3> 
-<div className="btnSearc">
+{/* <div className="btnSearc">
 <input type="text" placeholder="Search videos"/>
 <Search/>
-</div>
+</div> */}
 </div> 
             <Videos/>
         </div>

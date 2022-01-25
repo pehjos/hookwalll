@@ -18,7 +18,7 @@ fetch('https://saurav.tech/NewsAPI/top-headlines/category/health/in.json').then(
 return (
 <div className="topics">
 <div className="topics_container">
-    <p>Health-info</p>
+  
 <div className="topics_container__ch">
 <div className="topics_container__ch_head">
     <div className="topics_container__heda">
@@ -42,7 +42,7 @@ return (
 
 
 { data && data.articles.map((post1,index) => (
-    //    index>0&&(
+       index<3&&(
 <Headlines
 urlToImage={post1.urlToImage}
 title={post1.title}
@@ -53,7 +53,7 @@ publishedAt={post1.publishedAt}
 url={post1.url}
 src={post1.source.name}
 />
-))} 
+)))} 
 
 
 </div>

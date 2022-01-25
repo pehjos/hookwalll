@@ -17,7 +17,7 @@ fetch('https://saurav.tech/NewsAPI/top-headlines/category/sports/in.json').then(
 return (
 <div className="topics">
 <div className="topics_container">
-    <p>Headlines</p>
+   
 <div className="topics_container__ch">
 <div className="topics_container__ch_head">
     <div className="topics_container__heda">

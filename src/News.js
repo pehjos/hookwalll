@@ -3,7 +3,7 @@ import { useHistory, useLocation } from 'react-router-dom';
 import './news.css'
 import Adsence from './Adsence1'
 import Topics from './Topics'
-// import Ghanaprimier from './Ghanaprimier'
+import CoinBase from './CoinBase'
 import HealthHead from './HealthHead'
 import TechHeader from './TechHeader'
 import HeaderSports from './HeaderSports'
@@ -27,10 +27,14 @@ function useQuery1() {
   return new URLSearchParams(useLocation().search);
 }
 function News(setCurrentId) {
-  
+  const history = useHistory() 
  
 
-
+  const home=()=>{
+    history.push("/")
+    window.location.reload(false)
+    }
+  
 
 
 
@@ -67,7 +71,15 @@ const stories =
     ))
 
 if(!posts.length && !isLoading){
-  return 'no Post'
+  return <div className="no_search">
+
+<div className="search__header__result"> 
+        <h3>No Result Found</h3>
+        <img src="https://img.icons8.com/ios/50/000000/search-property.png"/>
+    <a><h3 onClick={home}>Back To Home</h3></a>  
+       </div> 
+
+  </div>
 }
 return (
 <div className="news">
@@ -126,11 +138,11 @@ isLoading?(<div className="loader__news">
 }
 <div className="ap">
 <div className="Page__div">
-  {/* <LiveScoreAPi/> */}
+   <LiveScoreAPi/> 
 <HealthHead/>
 <Button/>
-
- 
+<p style={{textAlign: 'left',color:'#2196f3',marginLeft:'10px'}}>SUGESTED FOR YOU</p>
+   {/* <LiveScoreAPi/>  */}
   {posts.map((post,index)=>(  
     
     index<3&&(
@@ -162,6 +174,8 @@ _id={post._id}
   <ScienceHeader/>
   <Storybtn/>
  <Topics/>
+ <p style={{textAlign: 'left',color:'#2196f3',marginLeft:'10px'}}>SUGESTED FOR YOU</p>
+ <CoinBase/>
 <ApiNews/>
 <TechHeader/>
 <LocalApi/>

@@ -1,0 +1,32 @@
+.coin-search>form>input{
+    height:30px;
+    width:100%;
+    font-size:16px;
+    margin:10px;
+    outline-width: 0;
+    border:none;
+    border-radius:30px;
+    }
+    .coin-search{
+        border-radius:30px;
+    display: flex;
+    align-items: center;
+    background-color:white;
+    margin:10px;
+        }
+        .coin-base{
+            width:100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .coin-base::-webkit-scrollbar {
+        display: none;
+      }
+      
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .coin-base {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }

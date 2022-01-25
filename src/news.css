@@ -296,3 +296,39 @@
       flex: 1;text-align: left;
       margin: 10px;  
     }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+          .search__header__result{
+      align-items: center;
+      flex-direction: column;
+      margin-top: 300px;
+      justify-content: center;
+      display: flex;
+          }
+      
+      .search__header__result>h3{
+  color:black;
+  
+  
+      }
+  
+       .search__header__result>a{
+  color:blue;
+  margin: 10px;
+  text-decoration: none;
+      }  
+          

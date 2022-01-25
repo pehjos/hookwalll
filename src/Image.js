@@ -22,14 +22,32 @@ RemoveRedEyeOutlined
 function Image() {
 
     const [image, setimage] = useState([]);
+    const [search, setSearch] = useState('');
+
+
+
 useEffect(() => {
-const fetchimage = async() => {
-const res = await Axios.get('https://pixabay.com/api/?key=17444328-01bb5c92e7087ef265af56d02&q=&image_type=photo&per_page=100&order=popular,latest&safesearch=false&editors_choice=true&image_type=all&category=backgrounds, fashion, nature, science, education, feelings, health, people, religion, places, animals, industry, computer, food, sports, transportation, travel, buildings, business, music');
-setimage(res.data.hits)
- }
- fetchimage();
- console.log(image)
-},[])
+  Axios
+    .get(
+      'https://pixabay.com/api/?key=17444328-01bb5c92e7087ef265af56d02&q=&image_type=photo&per_page=100&order=popular,latest&safesearch=false&editors_choice=true&image_type=all&category=backgrounds, fashion, nature, science, education, feelings, health, people, religion, places, animals, industry, computer, food, sports, transportation, travel, buildings, business, music'
+    )
+    .then(res => {
+      setimage(res.data.hits)
+      
+    })
+    .catch(error => console.log(error));
+}, []);
+
+
+const handleChange = e => {
+  setSearch(e.target.value);
+};
+
+const filteredCoins = image.filter(image =>
+  image.tags.toLowerCase().includes(search.toLowerCase())
+);
+
+
 
     return (
         <div className="image">
@@ -39,14 +57,14 @@ setimage(res.data.hits)
   </Link>
 <h3>ENJOY FREE IMAGES</h3> 
 <div className="btnSearc">
-<input type="text" placeholder="Search images"/>
+<input type="text"  onChange={handleChange} placeholder="Search images"/>
 <Search/>
 </div>
 </div> 
         <div className="imagecontent">
 
-         {image.map((image)=>(
-           
+         {filteredCoins.map((image)=>{
+        return (
         <div className="cardimg"> 
          
          <img src={image.largeImageURL}/>
@@ -71,13 +89,13 @@ setimage(res.data.hits)
        </div>
          </div>
          </div>
-     
-         ))}  
+        
+         )})}  
          </div> 
          <div className="disclaimer">
 <h6>Disclaimer</h6>
 <a href="https://pixabay.com/">
-    <img src="https://pixabay.com/static/img/public/medium_rectangle_a.png" alt="Pixabay"/>
+<img src="https://pixabay.com/static/img/public/medium_rectangle_a.png" alt="Pixabay"/>
 </a>
 <p>All these images are from Pixabay</p>
 
