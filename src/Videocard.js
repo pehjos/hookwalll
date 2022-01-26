@@ -147,7 +147,7 @@ onClose={toglesliders("right",false)}>
  ref={videoRef}
  onClick={togglePlay}
 onTimeUpdate={handleTimeUpdate}   
-preload="auto"
+preload="metadata"
 />
 <div className="tile1">
 
