@@ -26,11 +26,11 @@ const Coin = ({
 
 
 {priceChange < 0 ? (
-            <p className='red'>Per: {priceChange.toFixed(2)}%</p>
+            <p className='red'> {priceChange.toFixed(2)}%</p>
           ) : (
-            <p className='green'>Per: {priceChange.toFixed(2)}%</p>
+            <p className='green'>{priceChange.toFixed(2)}%</p>
           )}
-<p>Rank:{rank}</p>
+<p>{rank}</p>
 </div>
 <div className='coin_contain_prices2'>
 {priceChange < 0 ? (
