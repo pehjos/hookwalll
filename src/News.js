@@ -138,7 +138,7 @@ isLoading?(<div className="loader__news">
 }
 <div className="ap">
 <div className="Page__div">
-   <LiveScoreAPi/> 
+   {/* <LiveScoreAPi/>  */}
 <HealthHead/>
 <Button/>
 <p style={{textAlign: 'left',color:'#2196f3',marginLeft:'10px'}}>SUGESTED FOR YOU</p>
