@@ -346,7 +346,7 @@ onClose={togleslider("right",false)}>
 
 <div className="footline">
 <div className="imgfoot">
-           <h4>{tag}</h4>
+           {/* <h4>{tag}</h4> */}
            {post.image==""?  (<img src={photo}/>):(<img src={optionalimage}/>)}
           {/* <div className="visible">
             <VisibilityOutlined/>

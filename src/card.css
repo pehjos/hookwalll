@@ -146,12 +146,12 @@ margin-left: 1500%;
     -moz-user-select: none;
     -ms-user-select:none;
     }
-    
+/*     
     .cardmain:hover{
-    /* transform: scale(1.04); */
+    /* transform: scale(1.04); 
     
     
-    }
+    } */
     mark {
     background:none;
     color:green;
@@ -186,7 +186,7 @@ border-radius :50%;
       font-size :12px;
      color:#2196f3;
    }
-   .imgfoot>h4{
+   /* .imgfoot>h4{
        margin-top:-690px;
        border-radius: px;
        position: absolute;
@@ -194,7 +194,7 @@ border-radius :50%;
 background-color:rgba(220, 20, 60, 0.295);
     padding:3px;
     color:white;
-       } 
+       }  */
     .visible{
 display: flex;
 align-items: center;
